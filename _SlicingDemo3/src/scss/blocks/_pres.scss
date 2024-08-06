@@ -1,0 +1,94 @@
+.pres
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    background: none #dfd3cd;
+    position:   relative;
+
+} // .pres
+
+.pres__image
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    display:   block;
+    margin:    0 auto;
+    max-width: 100%;
+    height:    auto;
+
+} // .pres__image
+
+.pres__content
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+    font-family: 'RobotoSlab';
+    box-sizing:  border-box;
+    padding:     119px 190px 30px;
+
+    @include media(">=desktop")
+    {
+        width:  $page-w-desktop;
+        margin: 0 auto;
+    }
+
+    @include media("<desktop")
+    {
+        padding: 16px 190px 20px;
+    }
+
+    @include media("<=tablet")
+    {
+        padding: 16px 20px 20px;
+    }
+
+} // .pres__content
+
+.pres__title
+{
+    font-family:    'RobotoSlab';
+    font-weight:    bold;
+    font-size:      43px;
+    line-height:    67px;
+    color:          #f38d4c;
+    text-transform: uppercase;
+    width:          500px;
+    margin:         0 0 12px;
+
+    @include media("<desktop")
+    {
+        font-size:   calc(20px + (43 - 20) * ((100vw - 320px) / (1400 - 320)));
+        line-height: 120%;
+    }
+
+    @include media("<=tablet")
+    {
+        width:  320px;
+        margin: 0 0 8px;
+    }
+
+} // .pres__title
+
+.pres__desc
+{
+    font-family: 'RobotoSlab';
+    font-weight: 100;
+    font-size:   18px;
+    line-height: 30px;
+    color:       #1b252e;
+    width:       500px;
+    margin:      0 0 19px;
+
+    @include media("<desktop")
+    {
+        font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1400 - 320)));
+    }
+
+    @include media("<=tablet")
+    {
+        width:       auto;
+        line-height: 120%;
+        margin:      0 0 8px;
+    }
+
+} // .pres__desc

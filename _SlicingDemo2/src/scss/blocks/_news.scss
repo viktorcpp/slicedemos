@@ -1,0 +1,247 @@
+
+.news
+{
+    background-color: #fff;
+
+    //@include media(){}
+
+} // .news
+
+.news__inner
+{
+    padding: 11px 0 0;
+
+    @include media(">=desktop")
+    {
+        max-width: $page-w-desktop;
+        margin:    0 auto;
+
+    } // media
+
+} // .news__inner
+
+.news__left
+{
+    width:         100%;
+    flex:          0 0 auto;
+    display:       flex;
+    flex-flow:     row;
+    align-content: stretch;
+    padding:       0 9px 9px;
+
+    @include media("<mobile-big")
+    {
+        width:       auto;
+        flex-flow:   column;
+        align-items: center;
+
+    } // media
+
+} // .news__left
+
+.news__text
+{
+    @include segoe-wp-light(29px);
+    @include size( 46.72%, 232px );
+
+    background-color: #ec9e03;
+    color:            #fff;
+    display:          flex;
+    flex-flow:        row wrap;
+    align-content:    stretch;
+    margin:           0 9px 0 0;
+    line-height:      33px;
+    position:         relative;
+
+    a
+    {
+        @include size(100%, 100%);
+
+        color:           inherit;
+        text-decoration: none;
+        display:         block;
+        line-height:     33px;
+        padding:         16px 20px 16px 26px;
+        box-sizing:      border-box;
+        position:        relative;
+        z-index:         1;
+
+    } // a
+
+    svg
+    {
+        @include size(10px, 10px);
+
+        position: absolute;
+        z-index:  0;
+        right:    12px;
+        bottom:   18px;
+
+    } // svg
+
+    @include media("<mobile-big")
+    {
+        @include size(auto, auto);
+
+        font-size:   calc(14px + (29 - 14) * ((100vw - 320px) / (640 - 320)));
+        line-height: 120%;
+        margin:      0 0 9px;
+
+        a
+        {
+            line-height: 120%;
+
+        } // a
+
+    } // media
+
+} // .news__text
+
+.news__video
+{
+    @include size( 49.22%, 232px );
+
+    overflow: hidden;
+    position: relative;
+
+    @include media("<mobile-big")
+    {
+        @include size(auto, auto);
+
+    } // media
+
+} // .news__video
+
+.news__video-preview
+{
+    @include size( 100%, auto );
+
+    display:  block;
+    position: relative;
+    z-index:  1;
+
+} // .news__video-preview
+
+.news__video-play
+{
+    @include size(100%, 100%);
+
+    position:        absolute;
+    text-decoration: none;
+    left:            0;
+    top:             0;
+    z-index:         2;
+    display:         flex;
+    align-content:   center;
+    justify-content: center;
+    align-items:     center;
+
+    span
+    {
+        @include size(61px, 61px);
+
+        background-color: rgba( 245, 197, 6, 0.72 );
+        border-radius:    50%;
+        overflow:         hidden;
+        display:          flex;
+        align-content:    center;
+        justify-content:  center;
+        align-items:      center;
+
+    } // span
+
+    svg
+    {
+        margin: 0 0 0 5px;
+
+    } // svg
+
+} // .news__video-play
+
+.news__tw
+{
+    @include size(100%, 233px);
+
+    background-color: #f5c507;
+    flex:             0 0 auto;
+    display:          flex;
+    flex-flow:        row;
+    align-content:    stretch;
+
+    @include media("<mobile-big")
+    {
+        flex-flow:   column;
+        align-items: center;
+        height:      auto;
+
+    } // media
+
+} // .news__tw
+
+.news__tw-img
+{
+    @include size(50%, auto);
+
+    display:         flex;
+    flex-flow:       row;
+    align-items:     center;
+    justify-content: center;
+    min-width:       320px;
+
+    @include media("<mobile-big")
+    {
+        height: 160px;
+
+    } // media
+
+} // .news__tw-img
+
+.news__tw-content
+{
+    @include size(50%, auto);
+
+    @include media("<mobile-big")
+    {
+        width:          320px;
+        padding-bottom: 10px;
+
+    } // media
+
+} // .news__tw-content
+
+.news__tw-tweets
+{
+    @include size(100%, 81.97%);
+
+    overflow: hidden;
+
+    @include media("<mobile-big")
+    {
+        height: auto;
+
+    } // media
+
+} // .news__tw-tweets
+
+.news__tw-controls
+{
+    @include size(100%, 18.03%);
+
+    display:       flex;
+    flex-flow:     row;
+    align-content: stretch;
+
+    .form-item-text
+    {
+        width: 218px;//185px;
+
+        input
+        {
+            width: 185px;
+            float: right;
+
+        } // input
+
+    } // .form-item-text
+
+} // .news__tw-controls

@@ -1,0 +1,85 @@
+
+html, body
+{
+    @include font-segoe-wp-light(14px);
+
+    display:          block;
+    min-height:       100%;
+    margin:           0;
+    padding:          0;
+    line-height:      120%;
+    background-color: #fff;
+    overflow-x:       hidden;
+}
+
+html
+{
+    //
+
+} // html
+
+body
+{
+    max-width: 100%;
+
+} // body
+
+.page
+{
+    width:            200vw;
+    min-height:       100vh;
+    display:          flex;
+    flex-flow:        row;
+    align-items:      stretch;
+    align-content:    stretch;
+    transform-origin: 0 0;
+    transition:       0.5s transform ease-in-out;
+
+} // .page
+
+.page--menu-mobile-opened
+{
+    transform: translate3d(-84vw, 0, 0);
+
+} // .page--menu-mobile-opened
+
+.page__main
+{
+    width:         100vw;
+    min-height:    100vh;
+    display:       flex;
+    flex-flow:     column;
+    align-content: stretch;
+
+} // .page__main
+
+.page__menu-mobile
+{
+    width:      84vw;
+    min-height: 100vh;
+
+} // .page__menu-mobile
+
+section
+{
+    &.content
+    {
+        display: flex;
+        flex:    1 1 auto;
+
+    } // .content
+
+} // section
+
+.content__main
+{
+    width: 100%;
+
+    @include media(">=desktop")
+    {
+        //width:  $page-w-desktop;
+        //margin: 0 auto;
+
+    } // media
+
+} // .content__main

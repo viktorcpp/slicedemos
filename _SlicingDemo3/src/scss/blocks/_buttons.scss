@@ -1,0 +1,56 @@
+.btn-base
+{
+    font-family:     'RobotoSlab';
+    font-weight:     normal;
+    font-size:       15px;
+    line-height:     51px;
+    color:           #fff;
+    display:         inline-block;
+    height:          51px;
+    position:        relative;
+    border-radius:   25px;
+    overflow:        hidden;
+    text-decoration: none;
+    padding:         0 0 0 31px;
+
+    @include media("<tablet")
+    {
+        line-height: 30px;
+        height:      30px;
+        padding:     0 0 0 20px;
+    }
+
+} // .btn-base
+
+.btn--arrow-right
+{
+    @extend .btn-base;
+
+    padding-right: 32px;
+
+    &:after
+    {
+        @include pseudo;
+        @include size(15px, 11px);
+        @include sprite($right-arrow);
+
+        display:     inline-block;
+        margin-left: 22px;
+        position:    relative;
+        top:         1px;
+    }
+
+    @include media("<tablet")
+    {
+        padding-right: 20px;
+    }
+
+} // .btn-arrow-right
+
+.btn--orange
+{
+    @extend .btn--arrow-right;
+
+    background: none #f38d4c;
+
+} // .btn-orange

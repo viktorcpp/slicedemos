@@ -1,0 +1,51 @@
+<header>
+    <div class="header__inner">
+        <div class="header__main">
+            <div class="header__top">
+                <div class="header__logo">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="/images/sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="22">
+                                        <use xlink:href="/images/sprite.svg#ico-nav-aboutus"></use>
+                                    </svg>
+                                    about us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="22">
+                                        <use xlink:href="/images/sprite.svg#ico-nav-services"></use>
+                                    </svg>
+                                    services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="22">
+                                        <use xlink:href="/images/sprite.svg#ico-nav-contactus"></use>
+                                    </svg>
+                                    contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__nav-h1"></div>
+                    <div class="header__nav-h2"></div>
+                </div><!-- /header__nav -->
+            </div><!-- /header__top -->
+            <div class="header__bot">
+                {% include 'slider.twig' %}
+            </div>
+        </div><!-- /header__main -->
+    </div><!-- /header__inner -->
+    <img class="header__back" src="/images/back-block-page-top.jpg" alt="" width="1300" height="566">
+</header>

@@ -1,0 +1,80 @@
+{% extends "partials/base-page-template.twig" %}
+{% block content %}
+    <div class="page__main">
+        {% include 'partials/header.twig' %}
+        <section class="content">
+            <div class="content__main">
+
+                {% include 'partials/rubrics.twig' %}
+
+                <div class="content__columns">
+                    <div class="content__col-left">
+
+                        {% set pre_tags   = 'art health' %}
+                        {% set pre_title  = 'Barbecue Party Tips For A Truly Amazing Event' %}
+                        {% set pre_date   = 'June 14, 2015' %}
+                        {% set pre_author = 'Author Doe' %}
+                        {% set pre_image  = '/temp-files/image-11.jpg' %}
+                        {% include 'partials/postpreview.twig' %}
+
+                        {% set pre_tags   = 'art' %}
+                        {% set pre_title  = 'The Principles Of Scientific Cooking' %}
+                        {% set pre_date   = 'June 14, 2015' %}
+                        {% set pre_author = 'Author Doe' %}
+                        {% set pre_image  = '/temp-files/image-12.jpg' %}
+                        {% include 'partials/postpreview.twig' %}
+
+                        {% set pre_tags   = 'art' %}
+                        {% set pre_title  = 'How To Meet That Special Someone' %}
+                        {% set pre_date   = 'June 14, 2015' %}
+                        {% set pre_author = 'Author Doe' %}
+                        {% set pre_image  = '/temp-files/image-13.jpg' %}
+                        {% include 'partials/postpreview.twig' %}
+
+                        {% set pre_tags   = 'art' %}
+                        {% set pre_title  = 'How To Meet That Special Someone' %}
+                        {% set pre_date   = 'June 14, 2015' %}
+                        {% set pre_author = 'Author Doe' %}
+                        {% set pre_image  = '/temp-files/image-14.jpg' %}
+                        {% include 'partials/postpreview.twig' %}
+
+                        {% set pre_tags   = 'art lifestyle' %}
+                        {% set pre_title  = 'How To Meet That Special Someone' %}
+                        {% set pre_date   = 'June 14, 2015' %}
+                        {% set pre_author = 'Author Doe' %}
+                        {% set pre_image  = '/temp-files/image-15.jpg' %}
+                        {% include 'partials/postpreview.twig' %}
+
+                        {% set pre_tags   = 'travel' %}
+                        {% set pre_title  = 'How To Meet That Special Someone' %}
+                        {% set pre_date   = 'June 14, 2015' %}
+                        {% set pre_author = 'Author Doe' %}
+                        {% set pre_image  = '/temp-files/image-16.jpg' %}
+                        {% include 'partials/postpreview.twig' %}
+
+                        {% set pre_tags   = 'art' %}
+                        {% set pre_title  = 'How To Meet That Special Someone' %}
+                        {% set pre_date   = 'June 14, 2015' %}
+                        {% set pre_author = 'Author Doe' %}
+                        {% set pre_image  = '/temp-files/image-17.jpg' %}
+                        {% include 'partials/postpreview.twig' %}
+
+                    </div>
+                    <div class="content__col-right">
+                        {% include 'partials/about-short.twig' %}
+                        {% include 'partials/subscribe.twig' %}
+                        {% include 'partials/follow.twig' %}
+                        {% include 'partials/categories.twig' %}
+                        {% include 'partials/resent.twig' %}
+                        {% include 'partials/searchform.twig' %}
+                        {% include 'partials/banners.twig' %}
+                        {% include 'partials/widget-fb.twig' %}
+                        {% include 'partials/tags.twig' %}
+                    </div>
+                </div>
+
+            </div><!-- /content__main -->
+        </section>
+        {% include 'partials/footer.twig' %}
+    </div> <!-- /page__main -->
+{% endblock %}

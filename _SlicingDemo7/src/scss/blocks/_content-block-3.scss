@@ -1,0 +1,37 @@
+.content-block-3
+{
+    padding: 10px 0 0;
+
+} // .content-block-3
+
+.content-block-3__inner
+{
+    max-width:       $page-container-width;
+    margin:          0 auto;
+
+} // .content-block-3__inner
+
+.content-block-3__title
+{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size:   30px;
+    color:       #555;
+    line-height: 120%;
+    text-align:  center;
+    padding:     13px 0 7px;
+
+} // .content-block-3__title
+
+.content-block-3__text
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   16px;
+    color:       #8c8c8c;
+    line-height: 28px;
+    text-align:  center;
+    padding:     7px 0 15px;
+    margin:      0 15%;
+
+} // .content-block-3__text

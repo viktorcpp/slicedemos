@@ -1,0 +1,47 @@
+.btn-load-more
+{
+    display:          inline-block;
+    background-color: #998675;
+    border-bottom:    3px solid #736357;
+    border-radius:    4px;
+    font-family:      'Raleway';
+    font-weight:      800;
+    font-size:        14px;
+    text-decoration:  none;
+    text-transform:   uppercase;
+    color:            #fff;
+    padding:          16px 43px 14px;
+    transition:       $ani-speed-025s-base background ease-in-out;
+
+    &:hover
+    {
+        background-color: #736357;
+    }
+
+} // .btn-load-more
+
+.btn-play
+{
+    @include size( 100px, 100px );
+
+    display:          inline-block;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    border-radius:    50%;
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    fill:             #fff;
+    transition:       $ani-speed-025s-base background ease-in-out;
+
+    svg
+    {
+        @include size( 70%, 70% );
+
+    } // svg
+
+    &:hover
+    {
+        background-color: rgba( 0, 0, 0, 0.4 );
+    }
+
+} // .btn-play

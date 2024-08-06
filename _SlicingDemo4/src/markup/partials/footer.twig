@@ -1,0 +1,81 @@
+<footer>
+    <div class="footer__inner">
+        <div class="footer__col-left">
+
+            {% set add_class = 'footer__logo' %}
+            {% include 'logo.twig' %}
+
+            <div class="footer__line-call-big">
+                <a href="tel:5.555.555.5555">Have a project? Call us <span>5.555.555.5555</span></a>
+            </div>
+
+            {% set nav_class = 'footer_nav' %}
+            {% set nav_class_item = '' %}
+            {% set nav_class_item_active = '' %}
+            {% include 'nav.twig' %}
+
+        </div> <!-- /footer__col-left -->
+        <div class="footer__col-right">
+            <ul class="footer__socials">
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-social-fb"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-social-insta"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-social-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-social-g"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-social-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-social-web"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__line-call">
+                <a href="tel:5555 555 555">
+                    <svg preserveAspectRatio="xMidYMid meet">
+                        <use xlink:href="/images/sprite.svg#ico-phone"></use>
+                    </svg>
+                    Call Now: 5555 555 555
+                </a>
+            </div>
+            <div class="footer__line-call">
+                <a href="mailto:com@com.com">
+                    <svg preserveAspectRatio="xMidYMid meet">
+                        <use xlink:href="/images/sprite.svg#ico-mail"></use>
+                    </svg>
+                    Mail: com@com.com
+                </a>
+            </div>
+        </div> <!-- /footer__col-right -->
+    </div> <!-- /footer__inner -->
+</footer>

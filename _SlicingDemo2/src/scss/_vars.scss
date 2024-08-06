@@ -1,0 +1,15 @@
+
+$page-w-mobile:      320px;
+$page-w-mobile-big:  640px;
+$page-w-tablet:      768px;
+$page-w-desktop:     1024px;
+$page-w-desktop-max: 1300px;
+
+$breakpoints:
+(
+    'mobile':      $page-w-mobile,
+    'mobile-big':  $page-w-mobile-big,
+    'tablet':      $page-w-tablet,
+    'desktop':     $page-w-desktop,
+    'desktop-max': $page-w-desktop-max
+);

@@ -1,0 +1,24 @@
+.banners
+{
+    //
+
+} // .banners
+
+.banners__title
+{
+    margin: 0 0 24px;
+
+} // .banners__title
+
+.banners__item
+{
+    img
+    {
+        @include size( null, auto );
+
+        display:   block;
+        max-width: 100%;
+
+    } // img
+
+} // .banners__item

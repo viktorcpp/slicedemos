@@ -1,0 +1,107 @@
+.content-block-1
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+} // .content-block-1
+
+.content-block-1__inner
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    justify-content: stretch;
+
+} // .content-block-1__inner
+
+.content-block-1__back
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    display:   block;
+    max-width: 100%;
+    height:    auto;
+
+} // .content-block-1__back
+
+.hslider__item-1
+{
+    display:         flex;
+    flex-flow:       column;
+    align-items:     center;
+    align-content:   center;
+    justify-content: center;
+    text-align:      center;
+    box-sizing:      border-box;
+
+    @include media("<=tablet-big")
+    {
+        padding: 20px;
+    }
+
+} // .hslider__item-1
+
+.hslider__text-1
+{
+    @include size( 610px );
+
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size:   36px;
+    line-height: 120%;
+    color:       #fff;
+    padding:     2px 0;
+    margin:      -100px 0 0;
+
+    @include media("<=tablet-big")
+    {
+        @include font-size-adapt( 12, 320, 36, 1024 );
+        //font-size-adapt( $fmin:14, $smin:320, $fmax:30, $smax:1400 )
+
+        margin: 0;
+    }
+
+} // .hslider__text-1
+
+.hslider__text-2
+{
+    @include size( 610px );
+
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size:   52px;
+    line-height: 120%;
+    color:       #fff;
+    padding:     2px 0 7px;
+
+    @include media("<=tablet-big")
+    {
+        @include font-size-adapt( 22, 320, 52, 1024 );
+        //font-size-adapt( $fmin:14, $smin:320, $fmax:30, $smax:1400 )
+    }
+
+} // .hslider__text-2
+
+.hslider__text-3
+{
+    @include size( 610px );
+
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   16px;
+    line-height: 120%;
+    color:       #fff;
+    padding:     7px 0;
+    box-sizing:  border-box;
+
+    @include media("<=tablet-big")
+    {
+        @include size( 90% );
+        @include font-size-adapt( 10, 320, 16, 1024 );
+        //font-size-adapt( $fmin:14, $smin:320, $fmax:30, $smax:1400 )
+
+        padding: 0 40px;
+    }
+
+} // .hslider__text-3

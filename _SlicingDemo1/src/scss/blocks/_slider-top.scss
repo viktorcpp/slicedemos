@@ -1,0 +1,135 @@
+
+.slider-top
+{
+    position:   relative;
+    max-height: 482px;
+    overflow:   hidden;
+
+} // .slider-top
+
+.slider-top__main
+{
+    @include size(100%, 100%);
+
+    position:      absolute;
+    z-index:       1;
+    display:       flex;
+    flex-flow:     row;
+    align-content: stretch;
+
+    @include media(">=tablet")
+    {
+        &:before
+        {
+            @include pseudo;
+
+            position:   absolute;
+            left:       0;
+            top:        auto;
+            right:      0;
+            bottom:     0;
+            height:     8px;
+            background: url(/images/back-tile-triabgles.png) repeat-x;
+        }
+
+    } // media
+
+} // .slider-top__main
+
+.slider-top__image
+{
+    flex:  1 1 auto;
+    width: 43.59%;
+
+    img
+    {
+        @include size( auto, 90.456% );
+
+        margin: 7.884% 0 0 28.32%;
+
+    } // img
+
+} // .slider-top__image
+
+.slider-top__content
+{
+    @include font-segoe-wp-light();
+
+    flex:            1 1 auto;
+    display:         flex;
+    flex-flow:       column;
+    justify-content: center;
+    align-items:     flex-start;
+    width:           56.41%;
+    line-height:     120%;
+    color:           #fff;
+
+    h1
+    {
+        display:       block;
+        font-size:     31px;
+        line-height:   120%;
+        margin-bottom: 2px;
+        white-space:   nowrap;
+        width:         95%;
+        overflow:      hidden;
+
+    } // h1
+
+    p
+    {
+        display:       block;
+        font-size:     23px;
+        line-height:   36px;
+        width:         95%;
+        overflow:      hidden;
+        margin-bottom: 28px;
+
+    } // p
+
+    @include media(">=desktop")
+    {
+        h1
+        {
+            font-size:     42px;
+            margin-bottom: 7px;
+
+        } // h1
+
+        p
+        {
+            font-size:     26px;
+            margin-bottom: 33px;
+
+        } // p
+
+    } // media
+
+    @include media("<=mobile-big")
+    {
+        h1
+        {
+            font-size:   calc(14px + (31 - 14) * ((100vw - 320px) / (640 - 320)));
+            line-height: 120%;
+
+        } // h1
+
+        p
+        {
+            font-size:   calc(14px + (23 - 14) * ((100vw - 320px) / (640 - 320)));
+            line-height: 120%;
+
+        } // p
+
+    } // media
+
+} // .slider-top__content
+
+.slider-top__back
+{
+    @include size(100%, auto);
+
+    position: relative;
+    z-index:  0;
+
+} // .slider-top__back

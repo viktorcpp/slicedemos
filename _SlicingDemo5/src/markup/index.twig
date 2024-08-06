@@ -1,0 +1,18 @@
+{% extends "partials/base-page-template.twig" %}
+{% block content %}
+    <div class="page__main">
+        {% include 'partials/header.twig' %}
+        <section class="content">
+            <div class="content__main">
+
+                {% include 'partials/content-block-1.twig' %}
+                {% include 'partials/content-block-2.twig' %}
+                {% include 'partials/content-block-3.twig' %}
+                {% include 'partials/content-block-4.twig' %}
+                {% include 'partials/remote.twig' %}
+
+            </div><!-- /content__main -->
+        </section>
+        {% include 'partials/footer.twig' %}
+    </div> <!-- /page__main -->
+{% endblock %}

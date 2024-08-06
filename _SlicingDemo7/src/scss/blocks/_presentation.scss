@@ -1,0 +1,131 @@
+.presentation
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+} // .presentation
+
+.presentation__back
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    display:   block;
+    max-width: 100%;
+
+} // .presentation__back
+
+.presentation__inner
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+    display:         flex;
+    flex-flow:       column;
+    align-items:     center;
+    align-content:   center;
+    justify-content: center;
+
+    .btn-play
+    {
+        margin: 20px auto;
+
+    } // .btn-play
+
+    @include media("<=tablet-big")
+    {
+        .btn-play
+        {
+            margin: 10px auto;
+
+        } // .btn-play
+    }
+
+    @include media("<=tablet")
+    {
+        .btn-play
+        {
+            @include size( 50px, 50px );
+
+            margin: 5px auto;
+
+        } // .btn-play
+    }
+
+} // .presentation__inner
+
+.presentation__title
+{
+    @include size( 570px );
+
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size:   30px;
+    line-height: 120%;
+    color:       #fff;
+    padding:     20px 0 0;
+    margin:      0 auto 7px;
+    text-align:  center;
+
+    @include media("<=tablet-big")
+    {
+        padding: 10px 0 0;
+        margin:  0 auto;
+    }
+
+    @include media("<=tablet")
+    {
+        @include size( 100% );
+
+        box-sizing: border-box;
+        font-size:  20px;
+        padding:    5px 20px 0;
+    }
+
+} // .presentation__title
+
+.presentation__desc
+{
+    @include size( 570px );
+
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   16px;
+    line-height: 28px;
+    color:       #fff;
+    padding:     6px 0 0;
+    margin:      0 auto 16px;
+    text-align:  center;
+
+    @include media("<=tablet-big")
+    {
+        @include size( 100% );
+
+        font-size:   14px;
+        box-sizing:  border-box;
+        line-height: 120%;
+        padding:     6px 20px 0;
+        margin:      0 auto 6px;
+    }
+
+} // .presentation__desc
+
+.presentation__time
+{
+    @include size( 570px );
+
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size:   14px;
+    line-height: 120%;
+    color:       #c7b299;
+    padding:     16px 0 0;
+    margin:      0 auto 16px;
+    text-align:  center;
+
+    @include media("<=tablet")
+    {
+        @include size( 100% );
+
+        padding: 6px 0 0;
+        margin:  0 auto 6px;
+    }
+
+} // .presentation__time

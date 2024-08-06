@@ -1,0 +1,280 @@
+
+header
+{
+    position:  relative;
+    z-index:   90;
+    overflow:  hidden;
+    min-width: $page-w-mobile;
+    flex:      1 1 auto;
+
+    @include media(">=desktop")
+    {
+        max-height: 566px;
+        height:     566px;
+
+    } // media
+    
+} // header
+
+.header__inner
+{
+    @include size(100%, 100%);
+
+    display:  flex;
+    position: relative;
+    z-index:  1;
+
+    @include media(">=desktop")
+    {
+        position: absolute;
+
+    } // media
+
+} // .header__inner
+
+.header__main
+{
+    @include size(100%, 100%);
+
+    display:   flex;
+    flex-flow: column;
+
+    @include media(">=desktop")
+    {
+        //width:  $page-w-desktop;
+        //margin: 0 auto;
+
+    } // media
+
+} // .header__main
+
+.header__top
+{
+    height:    62px;
+    display:   flex;
+    flex-flow: row;
+    position:  relative;
+
+    @include media("<mobile-big")
+    {
+        height:    124px;
+        flex-flow: row wrap;
+
+    } // media
+
+    @include media(">=desktop")
+    {
+        height: 139px;
+        flex:   0 0 auto;
+        width:  $page-w-desktop;
+        margin: 0 auto;
+
+    } // media
+
+} // .header__top
+
+.header__bot
+{
+    flex: 1 1 auto;
+
+} // .header__bot
+
+.header__logo
+{
+    @include size(29.1%, 100%);
+
+    background-image: linear-gradient(#626262, #464646);
+    display:          flex;
+    align-content:    stretch;
+
+    a
+    {
+        width:           100%;
+        max-height:      100%;
+        box-sizing:      border-box;
+        overflow:        hidden;
+        display:         flex;
+        align-items:     center;
+        text-decoration: none;
+        color:           #fff;
+        padding:         0 0 0 12px;
+
+    } //
+
+    svg
+    {
+        @include size(89.25%, 62.9%);
+
+    } // svg
+
+    @include media("<mobile-big")
+    {
+        @include size( 100%, 62px );
+
+    } // media
+
+    @include media(">=desktop")
+    {
+        max-width:        561px;
+        flex:             1 1 auto;
+        background-image: none;
+
+        svg
+        {
+            @include size(100%, 83px);
+
+        } // svg
+
+    } // media
+
+} // .header__nav
+
+.header__nav
+{
+    @include segoe-wpn-reg(19px);
+
+    flex:           1 1 auto;
+    color:          #9b7d08;
+    text-transform: uppercase;
+
+    nav
+    {
+        @include size(100%, 100%);
+
+        display:          block;
+        background-color: #f2c306;
+
+    } // nav
+
+    ul
+    {
+        @include size(100%, 100%);
+
+        display:       flex;
+        flex-flow:     row;
+        align-content: stretch;
+        flex-flow:     row;
+
+    } // ul
+
+    li
+    {
+        flex:        1 1 auto;
+        border-left: 1px solid #d9af05;
+
+        &:first-child
+        {
+            border: none;
+
+        } // &:first-child
+
+    } // li
+
+    a
+    {
+        @include size(100%, 100%);
+
+        color:           inherit;
+        text-decoration: none;
+        display:         flex;
+        align-items:     center;
+        justify-content: center;
+
+    } // a
+
+    svg
+    {
+        margin-right: 10px;
+
+    } // svg
+
+    @include media("<mobile-big")
+    {
+        font-size: calc(14px + (19 - 14) * ((100vw - 320px) / (640 - 320)));
+
+        nav
+        {
+            height: 62px;
+
+        } // nav
+
+        svg
+        {
+            margin-right:     3px;
+            transform-origin: 50% 50%;
+            transform:        scale3d(0.6, 0.6, 1);
+
+        } // svg
+
+    } // media
+
+    @include media(">=desktop")
+    {
+        position: relative;
+
+        nav
+        {
+            @include size(auto, 41px);
+
+            position:    relative;
+            margin-left: 8px;
+            margin-top:  71px;
+            z-index:     3;
+
+        } // nav
+
+    } // media
+
+} // .header__nav
+
+.header__nav-h1
+{
+    display: none;
+
+    @include media(">=desktop")
+    {
+        display:          block;
+        position:         absolute;
+        left:             4px;
+        top:              67px;
+        right:            6px;
+        height:           41px;
+        background-color: rgba( 108, 97, 25, 0.27 );
+        z-index:          2;
+    }
+
+} // .header__nav-h1
+
+.header__nav-h2
+{
+    display: none;
+
+    @include media(">=desktop")
+    {
+        display:          block;
+        position:         absolute;
+        left:             0;
+        top:              63px;
+        right:            10px;
+        height:           41px;
+        background-color: rgba( 115, 96, 26, 0.27 );
+        z-index:          1;
+    }
+
+} // .header__nav-h2
+
+.header__back
+{
+    display: none;
+
+    @include media(">=desktop")
+    {
+        @include size(100%, 566px);
+
+        display:  block;
+        position: relative;
+        z-index:  0;
+
+    } // media
+
+} // .header__back

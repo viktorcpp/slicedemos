@@ -1,0 +1,174 @@
+.mslider
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+} // .mslider
+
+.mslider__viewport
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    justify-content: stretch;
+    overflow:        hidden;
+
+    ul
+    {
+        display:     flex;
+        flex-flow:   row;
+        align-items: stretch;
+        width:       500%;
+        transition:  0.25s margin ease-in-out;
+        margin:      0;
+
+    } // ul
+
+    li
+    {
+        padding: 0 22px;
+
+    } // li
+
+} // .mslider__viewport
+
+.mslider__controls-base
+{
+    $size: 96px;
+
+    @include pos-abs( null, 50%, null, null, 1 );
+    @include size( $size, $size );
+
+    margin: - calc($size / 2) 0 0; 
+    cursor: pointer;
+
+    svg
+    {
+        @include size( 100%, 100% );
+
+        fill:       rgba( 0, 0, 0, 1 );
+        transition: 0.15s fill ease-in-out;
+
+    } // svg
+
+    &.disabled
+    {
+        svg
+        {
+            fill: rgba( 0, 0, 0, 0.2 );
+
+        } // svg
+    }
+
+    &:not(.disabled):hover
+    {
+        svg
+        {
+            fill: rgba( 0, 0, 0, 0.7 );
+
+        } // svg
+
+    }
+
+} // .mslider__controls-base
+
+.mslider__controls-prev
+{
+    @extend .mslider__controls-base;
+
+    left:      20px;
+    transform: rotate3d( 0, 0, 1, 90deg );
+
+} // .mslider__controls-prev
+
+.mslider__controls-next
+{
+    @extend .mslider__controls-base;
+
+    right:     20px;
+    transform: rotate3d( 0, 0, 1, -90deg );
+
+} // .mslider__controls-next
+
+.mslider__item
+{
+    @include size( 440px, 400px );
+    @include pos-rel( null, null, null, null, 0 );
+
+    &:hover
+    {
+        .mslider__item-content
+        {
+            top: 0;
+
+        } // .mslider__item-content
+
+    }
+
+} // .mslider__item
+
+.mslider__item-back
+{
+    max-width: 100%;
+    height:    auto;
+
+} // .mslider__item-back
+
+.mslider__item-inner
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+} // .mslider__item-inner
+
+.mslider__item-content
+{
+    @include pos-abs( null, 100%, null, null, 1 );
+    @include size( 100%, 100% );
+
+    overflow:         hidden;
+    box-sizing:       border-box;
+    padding:          29px;
+    font-family:      'Poppins';
+    color:            #fff;
+    text-transform:   uppercase;
+    display:          flex;
+    flex-flow:        column;
+    justify-content:  flex-end;
+    background-color: rgba( 204, 204, 204, 0.6 );
+    transition:       0.25s top ease-in-out;
+
+    a
+    {
+        color:           inherit;
+        text-decoration: none;
+
+    } // a
+
+} // .mslider__item-content
+
+.mslider__item-content--black
+{
+    color: #000;
+
+} // .mslider__item-content--black
+
+.mslider__item-title
+{
+    line-height:    24px;
+    font-weight:    900;
+    font-size:      28px;
+    letter-spacing: 2px;
+    padding:        4px 0 4px;
+
+} // .mslider__item-title
+
+.mslider__item-sub
+{
+    font-weight:    800;
+    line-height:    120%;
+    font-size:      12px;
+    letter-spacing: 2px;
+    padding:        4px 0 6px;
+
+} // .mslider__item-sub

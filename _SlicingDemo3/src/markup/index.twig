@@ -1,0 +1,25 @@
+{% extends "partials/base-page-template.twig" %}
+{% block content %}
+    <div class="page__main">
+        {% include 'partials/header.twig' %}
+        <section class="content">
+            <div class="content__main">
+
+                {% set adv_img  = '/temp-files/image-2.jpg' %}
+                {% set adv_swap = '' %}
+                {% include 'partials/adv.twig' %}
+
+                {% set adv_img  = '/temp-files/image-3.jpg' %}
+                {% set adv_swap = 'adv--swap' %}
+                {% include 'partials/adv.twig' %}
+
+                {% include 'partials/pres.twig' %}
+
+            </div><!-- /content__main -->
+        </section>
+        {% include 'partials/footer.twig' %}
+    </div> <!-- /page__main -->
+    <div class="page__menu-mobile">
+        MENU MOBILE
+    </div>
+{% endblock %}

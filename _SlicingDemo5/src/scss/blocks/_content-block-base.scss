@@ -1,0 +1,55 @@
+.content-block-base
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+} // .content-block-base
+
+.content-block__title
+{
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size:   32px;
+    line-height: 120%;
+    color:       #3c3768;
+
+} // .content-block__title
+
+.content-block__text
+{
+    font-family: 'InterUI';
+    font-weight: 500;
+    font-size:   18px;
+    line-height: 40px;
+    color:       #455a64;
+
+} // .content-block__text
+
+.content-block__readmore
+{
+    font-family:     'Poppins';
+    font-weight:     900;
+    font-size:       20px;
+    color:           rgba( 250, 120, 117, 1 );
+    fill:            rgba( 250, 120, 117, 1 );
+    text-decoration: none;
+    text-transform:  uppercase;
+    line-height:     120%;
+    transition:      $ani-speed-02s color ease-in-out, $ani-speed-02s fill ease-in-out;
+
+    svg
+    {
+        @include size( 37px, 23px );
+        @include pos-rel( null, 5px, null, null, null );
+
+        display: inline-block;
+        margin:  0 0 0 21px;
+
+    } // svg
+
+    &:hover
+    {
+        color: rgba( 250, 120, 117, 0.7 );
+        fill:  rgba( 250, 120, 117, 0.7 );
+    }
+
+} // .content-block__readmore

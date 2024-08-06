@@ -1,0 +1,108 @@
+
+.menu
+{
+    @include segoeui-reg(23px);
+
+    background-color: #fff;
+    line-height:      120%;
+    color:            #000;
+
+    ul
+    {
+        @include size(100%, 100%);
+
+        display:       flex;
+        flex-flow:     row;
+        align-content: stretch;
+
+    } // ul
+
+    li
+    {
+        @include size(33.333%);
+
+        flex:          1 1 auto;
+        display:       flex;
+        flex-flow:     column;
+        align-content: stretch;
+
+    } // li
+
+    a
+    {
+        flex:            1 1 auto;
+        display:         flex;
+        flex-flow:       column;
+        align-items:     center;
+        justify-content: flex-end;
+        line-height:     120%;
+        text-decoration: none;
+        text-transform:  uppercase;
+        color:           inherit;
+        padding:         28px 0 27px;
+        text-align:      center;
+
+    } // a
+
+    svg
+    {
+        display:       block;
+        height:        auto;
+        margin-bottom: 16px;
+
+    } // svg
+
+    @include media("<mobile-big")
+    {
+        font-size: calc(14px + (23 - 14) * ((100vw - 320px) / (640 - 320)));
+
+    } // media
+
+    @include media(">=desktop")
+    {
+        font-size: 27px;
+        max-width: $page-w-desktop;
+        margin:    0 auto;
+
+        a
+        {
+            padding: 37px 0 32px;
+
+        } // a
+
+    } // media
+
+} // .menu
+
+.menu__item-1
+{
+    svg
+    {
+        width:     41.72%;
+        max-width: 109px;
+
+    } // svg
+
+} // .menu__item-1
+
+.menu__item-2
+{
+    svg
+    {
+        width:     31.41%;
+        max-width: 92px;
+
+    } // svg
+
+} // .menu__item-2
+
+.menu__item-3
+{
+    svg
+    {
+        width:     31.875%;
+        max-width: 81px;
+
+    } // svg
+
+} // .menu__item-3

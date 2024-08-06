@@ -1,0 +1,20 @@
+
+$page-w-mobile:     320px;
+$page-w-mobile-big: 640px;
+$page-w-tablet:     768px;
+$page-w-desktop:    1024px;
+
+$breakpoints:
+(
+    'mobile':     $page-w-mobile,
+    'mobile-big': $page-w-mobile-big,
+    'tablet':     $page-w-tablet,
+    'desktop':    $page-w-desktop
+);
+
+
+$ani-opacity-mult: 1;
+$ani-opacity-a:    0.15s*$ani-opacity-mult;
+$ani-opacity-b:    0.25s*$ani-opacity-mult;
+$ani-opacity-c:    0.5s*$ani-opacity-mult;
+$ani-opacity-d:    1s*$ani-opacity-mult;

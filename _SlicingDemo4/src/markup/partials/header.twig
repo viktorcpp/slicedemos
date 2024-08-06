@@ -1,0 +1,18 @@
+<header>
+    <div class="header__inner">
+        <div class="header__main">
+
+            {% set add_class = 'header__logo' %}
+            {% include 'logo.twig' %}
+
+            <div class="header__slogan">Great experiences build<br>great brands.</div>
+
+            {% set nav_class = 'header__nav' %}
+            {% set nav_class_item = 'header__nav-item' %}
+            {% set nav_class_item_active = 'header__nav-item--active' %}
+            {% include 'nav.twig' %}
+
+        </div> <!-- /header__main -->
+        <img class="header__back" width="1920" height="720" src="/temp-files/back-header.jpg" alt="">
+    </div> <!-- /header__inner -->
+</header>

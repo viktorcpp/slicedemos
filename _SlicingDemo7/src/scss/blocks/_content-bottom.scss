@@ -1,0 +1,228 @@
+.content-bottom
+{
+    background-color: #191919;
+
+} // .content-bottom
+
+.content-bottom__inner
+{
+    display:         flex;
+    flex-flow:       row wrap;
+    align-items:     stretch;
+    align-content:   stretch;
+    justify-content: stretch;
+    max-width:       $page-container-width;
+    margin:          auto;
+    font-family:     'Montserrat';
+    font-weight:     300;
+    font-size:       14px;
+    line-height:     120%;
+    color:           #555;
+
+    @include media("<=tablet")
+    {
+        padding-bottom: 20px;
+    }
+
+} // .content-bottom__inner
+
+.content-bottom__col
+{
+    flex:       1 1 25%;
+    padding:    80px 14px;
+    box-sizing: border-box;
+
+    @include media("<=tablet-big")
+    {
+        flex:    1 1 50%;
+        padding: 20px 14px;
+    }
+
+    @include media("<=tablet")
+    {
+        flex:    1 1 100%;
+        padding: 10px 14px;
+    }
+
+} // content-bottom__col
+
+.content-bottom__logo
+{
+    margin: 0 0 23px;
+
+} // .content-bottom__logo
+
+.content-bottom__title
+{
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size:   24px;
+    line-height: 120%;
+    color:       #fff;
+    padding:     24px 0 0;
+
+} // .content-bottom__title
+
+.content-bottom__text
+{
+    display:     block;
+    line-height: 24px;
+    margin:      0 0 24px;
+    transition:  $ani-speed-025s-base color;
+
+    &:hover
+    {
+        color: #c7b299;
+    }
+
+} // .content-bottom__text
+
+.content-bottom__readmore
+{
+    font-family:     'Montserrat';
+    font-weight:     normal;
+    font-size:       14px;
+    line-height:     120%;
+    color:           #d1d1d1;
+    text-decoration: none;
+
+} // .content-bottom__readmore
+
+.content-bottom__posts
+{
+    line-height: 0;
+
+    li
+    {
+        border-top: 1px solid #252525;
+        padding:    18px 0 19px;
+
+        &:first-child
+        {
+            border: none;
+        }
+
+        &:hover, &.active
+        {
+            .content-bottom__post-date
+            {
+                color: #fff;
+
+            } // .content-bottom__post-date
+
+            .content-bottom__post-text
+            {
+                color: #c7b299;
+
+            } // .content-bottom__post-text
+        }
+
+    } // li
+
+} // .content-bottom__posts
+
+.content-bottom__post-date
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   12px;
+    line-height: 120%;
+    color:       #363636;
+    margin:      0 0 5px;
+    transition:  $ani-speed-025s-base color;
+
+} // .content-bottom__post-date
+
+.content-bottom__post-text
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   14px;
+    line-height: 20px;
+    color:       #555;
+    transition:  $ani-speed-025s-base color;
+
+} // .content-bottom__post-text
+
+.content-bottom__tweets
+{
+    line-height: 0;
+
+    li
+    {
+        border-top: 1px solid #252525;
+        padding:    15px 0 22px;
+
+        &:first-child
+        {
+            border: none;
+        }
+
+        &:hover
+        {
+            .content-bottom__tweets-text
+            {
+                color: #c7b299;
+
+            } // .content-bottom__tweets-text
+
+            .content-bottom__tweets-time
+            {
+                color: #fff;
+
+            } // .content-bottom__tweets-time
+        }
+
+    } // li
+
+} // .content-bottom__tweets
+
+.content-bottom__tweets-tag
+{
+    color:           #00bff3;
+    text-decoration: none;
+
+} // .content-bottom__tweets-tag
+
+.content-bottom__tweets-link
+{
+    color:           #959595;
+    text-decoration: none;
+
+} // .content-bottom__tweets-link
+
+.content-bottom__tweets-text
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   14px;
+    line-height: 20px;
+    margin:      0 0 6px;
+    transition:  $ani-speed-025s-base color;
+
+} // .content-bottom__tweets-text
+
+.content-bottom__tweets-time
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   12px;
+    line-height: 120%;
+    color:       #363636;
+    transition:  $ani-speed-025s-base color;
+
+} // .content-bottom__tweets-time
+
+.content-bottom__widget-placeholder
+{
+    margin: 24px 0 0;
+
+    //TODO: remove temp
+    img
+    {
+        display:   block;
+        max-width: 100%;
+
+    } // img
+
+} // .content-bottom__widget-placeholder

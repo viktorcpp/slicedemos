@@ -1,0 +1,70 @@
+
+@mixin font-segoe-wpn-reg($size:null)
+{
+    font-family: 'Segoe-WPN-Reg';
+
+    @if $size!=null
+    {
+        font-size: $size;
+    }
+
+} // font-segoe-wpn-reg
+
+@mixin font-segoe-wp-light($size:null)
+{
+    font-family: 'Segoe-WP-Light';
+
+    @if $size!=null
+    {
+        font-size: $size;
+    }
+
+} // font-segoe-wpn-reg
+
+@font-face
+{
+    font-family: 'HelveticaNeueRegular';
+    src: url('../fonts/helveticaneue-webfont.eot');
+    src: url('../fonts/helveticaneue-webfont.eot?iefix') format('eot'),
+         url('../fonts/helveticaneue-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-webfont.svg#webfonthSEi03W6') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+@font-face
+{
+    font-family: 'Segoe-WPN-Reg';
+    src: url('../fonts/seg0ewpn-webfont.eot');
+    src: url('../fonts/seg0ewpn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/seg0ewpn-webfont.woff2') format('woff2'),
+         url('../fonts/seg0ewpn-webfont.woff') format('woff'),
+         url('../fonts/seg0ewpn-webfont.svg#seg0ewpnregular') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+@font-face
+{
+    font-family: 'Segoe-WP-Light';
+    src: url('../fonts/seg0ewplight-webfont.eot');
+    src: url('../fonts/seg0ewplight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/seg0ewplight-webfont.woff2') format('woff2'),
+         url('../fonts/seg0ewplight-webfont.woff') format('woff'),
+         url('../fonts/seg0ewplight-webfont.svg#seg0ewplightlight') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+@font-face
+{
+    font-family: 'SourceSansPro';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style:  normal;
+}

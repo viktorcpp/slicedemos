@@ -1,0 +1,25 @@
+.widget-fb
+{
+    //
+
+} // .widget-fb
+
+.widget-fb__title
+{
+    margin: 0 0 24px;
+
+} // .widget-fb__title
+
+.widget-fb__main
+{
+    //temp
+    img
+    {
+        @include size( null, auto );
+
+        display:   block;
+        max-width: 100%;
+
+    } // img
+
+} // .widget-fb__main

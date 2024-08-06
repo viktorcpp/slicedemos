@@ -1,0 +1,49 @@
+.logo
+{
+    white-space: nowrap;
+
+    a
+    {
+        text-decoration: none;
+
+    } // a
+
+} // .logo
+
+.logo_ellipse
+{
+    @include size( 18px, 18px );
+
+    display:    inline-block;
+    fill:       #fff;
+    transition: 0.15s fill ease-in-out;
+
+} // .logo_ellipse
+
+.logo_tri
+{
+    @include size( 26px, 17px );
+
+    display:      inline-block;
+    stroke:       #fff;
+    stroke-width: 10px;
+    margin:       0 4px;
+    transition:   0.15s stroke ease-in-out;
+
+} // .logo_tri
+
+.logo_lbl
+{
+    @include pos-rel( null, -2px, null, null, null );
+
+    font-family:    'Poppins';
+    font-weight:    800;
+    font-size:      18px;
+    text-transform: uppercase;
+    color:          #fff;
+    letter-spacing: 3px;
+    padding:        0 0 0 10px;
+    white-space:    nowrap;
+    transition:     0.15s color ease-in-out;
+
+} // .logo_lbl

@@ -1,0 +1,63 @@
+
+html, body
+{
+    display:     block;
+    min-height:  100%;
+    margin:      0;
+    padding:     0;
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size:   15px;
+}
+
+html
+{
+    //
+
+} // html
+
+body
+{
+    min-height: 100vh;
+    max-width:  100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page
+{
+    width:            200vw;
+    display:          flex;
+    flex-flow:        row;
+    align-items:      stretch;
+    align-content:    stretch;
+    min-height:       100vh;
+    transform-origin: 0 0;
+    transition:       $ani-speed-05s transform-origin ease-in-out;
+
+} // .page
+
+.page__main
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    width:           100vw;
+    min-height:      100vh;
+    display:         flex;
+    flex-flow:       column;
+    align-items:     stretch;
+    justify-content: stretch;
+
+} // .page__main
+
+section
+{
+    &.content
+    {
+        @include pos-rel( null, null, null, null, 3 );
+
+        flex: 1 1 auto;
+
+    } // &.content
+
+} // section

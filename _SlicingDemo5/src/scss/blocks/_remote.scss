@@ -1,0 +1,106 @@
+.remote
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    margin: 0 13.28% 95px;
+
+    @include media("<=desktop-middle")
+    {
+        margin: 0;
+    }
+
+} // .remote
+
+.remote-inner
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    justify-content: stretch;
+
+    @include media("<=tablet-big")
+    {
+        flex-flow: column;
+    }
+
+} // .remote-inner
+
+.remote-back
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+} // .remote-back
+
+.remote-left
+{
+    @include size( 50% );
+
+    flex:            0 1 auto;
+    display:         flex;
+    flex-flow:       column;
+    align-items:     center;
+    justify-content: center;
+    box-sizing:      border-box;
+
+    @include media("<=tablet-big")
+    {
+        @include size( 100% );
+
+        padding: 20px;
+    }
+
+} // .remote-left
+
+.remote-right
+{
+    @include size( 50% );
+
+    flex:            0 1 auto;
+    display:         flex;
+    flex-flow:       column;
+    align-items:     flex-start;
+    justify-content: center;
+
+    input[type="email"]
+    {
+        box-shadow: none;
+        margin:     0 13px 0 0;
+    }
+
+    @include media("<=tablet-big")
+    {
+        @include size( 100% );
+
+        align-items: center;
+        padding:     20px;
+    }
+
+} // .remote-right
+
+.remote-title
+{
+    @include size( 410px );
+
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size:   40px;
+    line-height: 48px;
+    color:       #fff;
+    margin:      0 0 15px 55px;
+
+} // .remote-title
+
+.remote-text
+{
+    @include size( 410px );
+
+    font-family: 'InterUI';
+    font-weight: 500;
+    font-size:   18px;
+    line-height: 30px;
+    color:       #fff;
+    margin:      0 0 0 55px;
+
+} // .remote-text

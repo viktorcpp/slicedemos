@@ -1,0 +1,165 @@
+.rubrics
+{
+    margin: 0 0 84px;
+
+} // .rubrics
+
+.rubrics__inner
+{
+    max-width: $page-w-desktop;
+    margin:    0 auto;
+
+    ul
+    {
+        @include size( 100% );
+
+        display:         flex;
+        flex-flow:       row;
+        justify-content: stretch;
+        box-sizing:      border-box;
+        padding:         0 46px;
+
+        @include media("<=desktop-middle")
+        {
+            flex-flow:       row wrap;
+            justify-content: center;
+        }
+
+        @include media("<=tablet")
+        {
+            padding: 0 20px;
+        }
+
+    } // ul
+
+    li
+    {
+        box-sizing: border-box;
+        padding:    0 2px;
+        flex:       1 1 auto;
+
+        @include media("<=desktop-middle")
+        {
+            padding: 0 2px 4px;
+            flex:    0 1 auto;
+        }
+
+    } // li
+
+    @include media(">=desktop")
+    {
+        width: $page-w-desktop;
+    }
+
+} // .rubrics__inner
+
+.rubrics__item
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    background: none #35302a;
+
+
+} // .rubrics__item
+
+.rubrics__item-inner
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+} // .rubrics__item-inner
+
+.rubrics__item-back
+{
+    @include pos-rel( null, null, null, null, 0 );
+    @include size( null, auto );
+
+    display:   block;
+    max-width: 100%;
+
+} // .rubrics__item-back
+
+.rubrics__item-content
+{
+    @include pos-abs( 26px, null, 26px, 54px, 0 );
+
+    border:  3px solid rgba( 181, 159, 91, 0.4 );
+    padding: 17px 0 32px;
+
+    @include media("<=mobile-big")
+    {
+        padding: 12px 0 26px;
+        bottom:  20px;
+    }
+
+} // .rubrics__item-content
+
+.rubrics__item-title
+{
+    font-family:    'OpenSans';
+    font-weight:    900;
+    font-size:      14px;
+    line-height:    120%;
+    color:          #b59f5b;
+    text-transform: uppercase;
+    text-align:     center;
+    padding:        0 0 7px;
+
+} // .rubrics__item-title
+
+.rubrics__item-desc
+{
+    font-family:    'JosefinSans';
+    font-weight:    900;
+    font-size:      16px;
+    line-height:    24px;
+    color:          #fff;
+    text-transform: uppercase;
+    text-align:     center;
+    padding:        6px 40px 0;
+
+    @include media("<=mobile-big")
+    {
+        @include font-size-adapt( 12, 320, 16, 1920 );
+
+        line-height: 130%;
+        padding:     6px 20px 0;
+    }
+
+} // .rubrics__item-desc
+
+.rubrics__item-date
+{
+    @include pos-abs( 13px, null, null, 8px, 1 );
+
+    font-family: 'OpenSans';
+    font-weight: 200;
+    font-size:   12px;
+    line-height: 120%;
+    color:       #fff;
+    opacity:     0.54;
+
+} // .rubrics__item-date
+
+.rubrics__item-posts
+{
+    @include pos-abs( null, null, 8px, 7px, 1 );
+
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size:   12px;
+    line-height: 120%;
+    fill:        #b59f5b;
+    color:       #fff;
+    opacity:     0.54;
+
+    svg
+    {
+        @include size( 15px, 14px );
+        @include pos-rel( null, 4px, null, null, 1 );
+
+        display: inline-block;
+        margin:  0 7px 0 0;
+
+    } // svg
+
+} // .rubrics__item-posts

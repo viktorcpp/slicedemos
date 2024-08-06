@@ -1,0 +1,120 @@
+
+header
+{
+    @include pos-fix( 0, 0, 0, null, 100 );
+    
+} // header
+
+.header__main
+{
+    display:          flex;
+    flex-flow:        row;
+    justify-content:  stretch;
+    align-items:      stretch;
+    min-height:       150px;
+    background-color: rgba( 154, 150, 186, 0 );
+    transition:       $ani-speed-05s background ease-in-out;
+
+} // .header__main
+
+.header__main--background
+{
+    background-color: rgba( 154, 150, 186, 0.5 );
+
+} // .header__main--background
+
+.header__logo
+{
+    @include size( 205px, 36px );
+
+    flex:   0 1 auto;
+    margin: 54px 0 0 13.28%;
+
+    svg
+    {
+        @include size( 100%, 100% );
+
+    } // svg
+
+    @include media("<=tablet-big")
+    {
+        margin: 47px 0 0 20px;
+    }
+
+} // .header__logo
+
+.header__controls
+{
+    flex:            1 1 auto;
+    display:         flex;
+    flex-flow:       row;
+    align-items:     flex-start;
+    justify-content: flex-end;
+    box-sizing:      border-box;
+    padding:         38px 0 0;
+    margin:          0 12.4% 0 0;
+
+    @include media("<=tablet-big")
+    {
+        margin-right: 30px;
+    }
+
+} // .header__controls
+
+.header__search
+{
+    @include size( 60px, 60px );
+
+    border-radius:   50%;
+    overflow:        hidden;
+    background:      none rgba( 239, 116, 116, 1 );
+    fill:            #fff;
+    display:         flex;
+    flex-flow:       row;
+    align-items:     center;
+    justify-content: center;
+    box-shadow:      0px 18px 35px 0px rgba(250,120,117,0.45);
+    transition:      $ani-speed-02s background ease-in-out, $ani-speed-02s fill ease-in-out;
+
+    svg
+    {
+        @include size( 43.33%, 43.33% );
+
+    } // svg
+
+    &:hover
+    {
+        background: none rgba( 239, 116, 116, 0.7 );
+        fill:       rgba( 226, 226, 226, 1 );
+    }
+
+} // .header__search
+
+.header__menu
+{
+    @include size( 60px, 60px );
+
+    display:         flex;
+    flex-flow:       row;
+    align-items:     center;
+    justify-content: center;
+
+    svg
+    {
+        @include size( 43.33%, 43.33% );
+
+        fill:       #fff;
+        transition: $ani-speed-02s fill ease-in-out;
+
+    } // svg
+
+    &:hover
+    {
+        svg
+        {
+            fill: rgba( 226, 226, 226, 1 );
+
+        } // svg
+    }
+
+} // .header__menu

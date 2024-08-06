@@ -1,0 +1,18 @@
+{% extends "partials/base-page-template.twig" %}
+{% block content %}
+    <div class="page__main">
+        {% include 'partials/header.twig' %}
+        <section class="content">
+            <div class="content__main">
+
+                {% include 'partials/menu.twig' %}
+                {% include 'partials/news.twig' %}
+
+            </div><!-- /content__main -->
+        </section>
+        {% include 'partials/footer.twig' %}
+    </div> <!-- /page__main -->
+    <div class="page__menu-mobile">
+        MENU MOBILE
+    </div>
+{% endblock %}

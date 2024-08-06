@@ -1,0 +1,85 @@
+input[type=text], input[type=email]
+{
+    @include size( null, 48px );
+
+    font-family:      'OpenSans';
+    font-weight:      normal;
+    font-size:        13px;
+    color:            rgba( 0, 0, 0, 0.54 );
+    background-color: #f4f7f6;
+    display:          block;
+    padding:          0 16px;
+    margin:           0;
+    border:           none;
+    box-sizing:       border-box;
+
+} // input[type=text], input[type=email]
+
+input[type=submit]
+{
+    @include size( null, 48px );
+
+    font-family:      'Raleway';
+    font-weight:      900;
+    font-size:        14px;
+    color:            #fff;
+    text-transform:   uppercase;
+    padding:          0 10px;
+    margin:           0;
+    display:          block;
+    box-sizing:       border-box;
+    text-align:       center;
+    background-color: #b59f5b;
+    border:           none;
+    transition:       $ani-speed-025s opacity ease-in-out;
+
+    &:hover
+    {
+        opacity: 0.85;
+    }
+
+} // input[type=submit]
+
+.form-item
+{
+    //
+
+} // .form-item
+
+.form-submit
+{
+    //
+
+} // .form-submit
+
+.form-submit-search
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    fill:             #fff;
+    background-color: #b59f5b;
+    transition:       $ani-speed-025s opacity ease-in-out;
+
+    input[type=submit]
+    {
+        @include pos-abs( 0, 0, 0, 0, 2 );
+
+        opacity: 0;
+
+    } // input[type=submit]
+
+    svg
+    {
+        @include pos-abs( 50%, 50%, null, null, 0 );
+        @include size( 30px, 30px );
+
+        margin: -15px 0 0 -15px;
+
+    } // svg
+
+    &:hover
+    {
+        opacity: 0.8;
+    }
+
+} // .form-submit-search

@@ -1,0 +1,36 @@
+
+.btn-menu-mobile
+{
+    @include size(53px, 53px);
+
+    background:      none #fb9855;
+    position:        fixed;
+    left:            0;
+    top:             0;
+    z-index:         100;
+    cursor:          pointer;
+    display:         flex;
+    flex-flow:       column;
+    align-content:   center;
+    align-items:     center;
+    justify-content: center;
+
+    div
+    {
+        @include size(41.51%, 5.66%);
+
+        overflow:    hidden;
+        font-size:   0;
+        line-height: 0;
+        background:  none #fff;
+        margin:      0 0 4px 0;
+
+        &:last-child
+        {
+            margin: 0;
+
+        } // div:first-child
+
+    } // div
+
+} // .btn-menu-mobile

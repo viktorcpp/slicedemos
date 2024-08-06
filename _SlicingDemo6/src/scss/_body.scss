@@ -1,0 +1,192 @@
+
+html, body
+{
+    display:     block;
+    min-height:  100%;
+    margin:      0;
+    padding:     0;
+    font-family: 'OpenSans';
+    font-weight: normal;
+    font-size:   15px;
+    color:       #000;
+    line-height: 120%;
+}
+
+html
+{
+    //
+
+} // html
+
+body
+{
+    min-height: 100vh;
+    max-width:  100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: none #fff;
+}
+
+.page
+{
+    width:            200vw;
+    display:          flex;
+    flex-flow:        row;
+    align-items:      stretch;
+    align-content:    stretch;
+    min-height:       100vh;
+    transform-origin: 0 0;
+    transition:       0.5s transform-origin ease-in-out;
+
+} // .page
+
+.page__main
+{
+    width:           100vw;
+    display:         flex;
+    flex-flow:       column;
+    align-items:     stretch;
+    justify-content: stretch;
+
+} // .page__main
+
+section
+{
+    &.content
+    {
+        flex: 1 1 auto;
+
+    } // &.content
+
+} // section
+
+.content__columns
+{
+    @include size( 100% );
+
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    justify-content: stretch;
+    margin:          0 auto;
+    box-sizing:      border-box;
+    padding:         0 48px;
+
+    @include media(">=desktop")
+    {
+        width: $page-w-desktop;
+    }
+
+} // .content__columns
+
+.content__col-left
+{
+    flex:          0 1 69.22%;
+    padding:       37px 110px 37px 0;
+    display:       flex;
+    flex-flow:     column;
+    align-items:   flex-end;
+    align-content: flex-end;
+    box-sizing:    border-box;
+
+    @include media("<=desktop-middle")
+    {
+        flex:    1 1 100%;
+        padding: 37px 20px 37px;
+    }
+
+} // .content__col-left
+
+.content__col-right
+{
+    flex:          0 1 30.78%;
+    display:       flex;
+    flex-flow:     column;
+    align-items:   flex-start;
+    align-content: flex-start;
+    box-sizing:    border-box;
+    padding:       0 0 50px;
+
+    $right-blocks-size: 56.25%;
+
+    .about-short
+    {
+        @include size( $right-blocks-size );
+
+    } // .about-short
+
+    .subscribe
+    {
+        @include size( $right-blocks-size );
+
+    } // .subscribe
+
+    .follow
+    {
+        @include size( $right-blocks-size );
+
+    } // .follow
+
+    .categories
+    {
+        @include size( $right-blocks-size );
+
+    } // .categories
+
+    .resent
+    {
+        @include size( $right-blocks-size );
+
+    } // resent
+
+    .searchform
+    {
+        @include size( $right-blocks-size );
+
+    } // .searchform
+
+    .banners
+    {
+        @include size( $right-blocks-size );
+
+    } // .banners
+
+    .widget-fb
+    {
+        @include size( $right-blocks-size );
+
+    } // .widget-fb
+
+    .tags
+    {
+        @include size( $right-blocks-size+5 );
+
+    } // .tags
+
+    @include media("<=desktop-middle")
+    {
+        display: none;
+    }
+
+} // .content__col-right
+
+.title-small
+{
+    font-family:    'JosefinSans';
+    font-weight:    900;
+    font-size:      12px;
+    line-height:    120%;
+    color:          #0f0d0e;
+    text-align:     center;
+    text-transform: uppercase;
+    padding:        38px 20px 0;
+
+    &:after
+    {
+        @include pseudo( 66px, 3px );
+
+        margin:           10px auto 0;
+        background-color: rgba( 181, 159, 91, 0.4 );
+    }
+
+} // .title-small

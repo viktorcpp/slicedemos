@@ -1,0 +1,17 @@
+
+$page-w-mobile:         320px;
+$page-w-mobile-big:     480px;
+$page-w-tablet:         768px;
+$page-w-tablet-big:     1024px;
+$page-w-desktop-middle: 1440px;
+$page-w-desktop:        1920px;
+
+$breakpoints:
+(
+    'mobile':         $page-w-mobile,
+    'mobile-big':     $page-w-mobile-big,
+    'tablet':         $page-w-tablet,
+    'tablet-big':     $page-w-tablet-big,
+    'desktop-middle': $page-w-desktop-middle,
+    'desktop':        $page-w-desktop
+);

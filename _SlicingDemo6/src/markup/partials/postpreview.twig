@@ -1,0 +1,61 @@
+<div class="postpreview">
+    <div class="postpreview__top">
+        <div class="postpreview__image">
+            <img src="{{ pre_image }}" alt="" width="381" height="294">
+        </div> <!-- /postpreview__image -->
+        <div class="postpreview__content">
+            <div class="postpreview__info">
+                <div class="postpreview__tags">{{ pre_tags }}</div>
+                <div class="postpreview__title">{{ pre_title }}</div>
+                <div class="postpreview__date">{{ pre_date }}</div>
+                <div class="postpreview__author">by {{ pre_author }}</div>
+            </div> <!-- /postpreview__info -->
+            <div class="postpreview__text">
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ...</p>
+                <a href="#" class="postpreview__readmore">...</a>
+            </div>
+        </div> <!-- /postpreview__content -->
+    </div> <!-- /postpreview__top -->
+    <div class="postpreview__bot">
+        <div class="postpreview__posts">
+            <a href="#">
+                <svg preserveAspectRatio="xMidYMid meet">
+                    <use xlink:href="/images/sprite.svg#ico-send-msg"></use>
+                </svg>
+                24
+            </a>
+        </div>
+        <div class="postpreview__share">
+            share
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-socials-tw"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-socials-pint"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg preserveAspectRatio="xMidYMid meet">
+                            <use xlink:href="/images/sprite.svg#ico-socials-fb"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- /postpreview__bot -->
+</div> <!-- /postpreview -->
+
+{% set pre_tags   = '' %}
+{% set pre_title  = '' %}
+{% set pre_date   = '' %}
+{% set pre_author = '' %}
+{% set pre_image  = '' %}

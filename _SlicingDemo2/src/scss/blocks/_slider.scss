@@ -1,0 +1,151 @@
+
+@use 'sass:math';
+
+.slider
+{
+    position: relative;
+
+    @include media(">=desktop")
+    {
+        height: 427px;
+
+    } // media
+
+} // .slider
+
+.slider__item
+{
+    @include size(100%);
+
+    position: absolute; // temp
+    z-index:  1;
+
+    @include media(">=desktop")
+    {
+        width:      $page-w-desktop;
+        height:     427px;
+        margin:     0 0 0 math.div(-$page-w-desktop, 2);
+        left:       50%;
+        display:    flex;
+        flex-flow:  row nowrap;
+        box-sizing: border-box;
+        padding:    29px 0 0 12px;
+
+    } // media
+
+} // .slider__item
+
+.slider__item-preview
+{
+    @include size(100%, auto);
+
+    display:  block;
+    position: relative;
+    z-index:  1;
+
+    @include media(">=desktop")
+    {
+        @include size(auto, auto);
+    }
+
+} // .slider__item-preview
+
+.slider__item-play
+{
+    @include size(100%, 100%);
+
+    position:        absolute;
+    text-decoration: none;
+    left:            0;
+    top:             0;
+    z-index:         2;
+    display:         flex;
+    align-content:   center;
+    justify-content: center;
+    align-items:     center;
+
+    span
+    {
+        @include size(67px, 67px);
+
+        background-color: rgba( 245, 197, 6, 0.72 );
+        border-radius:    50%;
+        overflow:         hidden;
+        display:          flex;
+        align-content:    center;
+        justify-content:  center;
+        align-items:      center;
+
+    } // span
+
+    svg
+    {
+        margin: 0 0 0 5px;
+
+    } // svg
+
+} // .slider__item-play
+
+.slider__item-left
+{
+    width: 100%;
+
+    @include media(">=desktop")
+    {
+        @include size(550px, 327px);
+
+        position: relative;
+        overflow: hidden;
+
+    } // media
+
+} // .slider__item-left
+
+.slider__item-right
+{
+    display: none;
+
+    @include media(">=desktop")
+    {
+        @include size(463px, 327px);
+
+        font-family:     Arial;
+        font-size:       63px;
+        line-height:     120%;
+        text-align:      center;
+        text-transform:  uppercase;
+        display:         flex;
+        flex-flow:       column;
+        justify-content: center;
+
+        h1
+        {
+            color: #f5c506;
+
+        } // h1
+
+        h2
+        {
+            color: #fff;
+
+        } // h2
+
+    } // media
+
+} // .slider__item-right
+
+.slider__resizer
+{
+    @include size(100%, auto);
+
+    position: relative;
+    z-index:  0;
+
+} // .slider__resizer
+
+.slider__controls
+{
+    position: absolute;
+    z-index:  1;
+
+} // .slider__controls

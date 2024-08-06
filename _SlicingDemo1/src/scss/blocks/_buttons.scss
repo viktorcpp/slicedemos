@@ -1,0 +1,71 @@
+
+.btn
+{
+    @include font-segoe-wp-light(31px);
+
+    display:          inline-block;
+    background-color: #fff;
+    line-height:      120%;
+    text-decoration:  none;
+    color:            #fff;
+    padding:          5px 10px 10px;
+    cursor:           pointer;
+
+} // .btn
+
+.btn-blue
+{
+    @extend .btn;
+
+    background-color: #5094f2;
+
+} // .btn-blue
+
+.btn-check
+{
+    @extend .btn-blue;
+
+    padding-left: 15px;
+    position:     relative;
+
+    img, svg
+    {
+        @include size(32px, 32px);
+
+        margin-right: 12px;
+        position:     relative;
+        top:          5px;
+
+    } // img, svg
+
+    @include media(">=desktop")
+    {
+        font-size: 22px;
+        padding:   3px 10px 8px 15px;
+
+        img, svg
+        {
+            @include size(23px, 23px);
+
+            margin-right: 4px;
+
+        } // img, svg
+
+    } // media
+
+    @include media("<=mobile-big")
+    {
+        font-size: calc(14px + (23 - 14) * ((100vw - 320px) / (640 - 320)));
+
+        img, svg
+        {
+            @include size(14px, 14px);
+
+            margin-right: 4px;
+            top:          0;
+
+        } // img, svg
+
+    } // media
+
+} // .btn-check

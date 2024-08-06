@@ -1,0 +1,21 @@
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="57.187" height="43.219" viewBox="0 0 57.187 43.219">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5094f2;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M558.544,27.2h52.533a2.335,2.335,0,0,1,2.335,2.335V68.058a2.335,2.335,0,0,1-2.335,2.335H558.544a2.335,2.335,0,0,1-2.335-2.335V29.533A2.335,2.335,0,0,1,558.544,27.2Z" transform="translate(-556.219 -27.188)"/>
+  <path class="cls-2" d="M566.716,36.537h36.189v5.389H566.716V36.537Z" transform="translate(-556.219 -27.188)" fill="#fff"/>
+  <path id="Shape_3_copy" data-name="Shape 3 copy" class="cls-2" d="M566.716,45.877h36.189v5.389H566.716V45.877Z" transform="translate(-556.219 -27.188)" fill="#fff"/>
+  <path id="Shape_3_copy_2" data-name="Shape 3 copy 2" class="cls-2" d="M566.716,55.216h36.189V60.6H566.716V55.216Z" transform="translate(-556.219 -27.188)" fill="#fff"/>
+</svg>

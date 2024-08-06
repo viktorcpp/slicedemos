@@ -1,0 +1,264 @@
+.workinfo
+{
+    display:     flex;
+    flex-flow:   row;
+    align-items: stretch;
+    width:       100%;
+    margin:      0 0 159px;
+
+    @include media("<tablet")
+    {
+        margin-bottom: 20px;
+    }
+
+    @include media("<=desktop-middle")
+    {
+        margin-bottom: 50px;
+    }
+
+} // workinfo
+
+.workinfo__left
+{
+    background: url("/temp-files/image-1-filler.png") left top repeat-x;
+    flex:       1 1 auto;
+
+} // workinfo__left
+
+.workinfo__center
+{
+    width:           100%;
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    justify-content: stretch;
+
+    .image-1
+    {
+        max-width: 100%;
+        height:    auto;
+        display:   block;
+
+    } // .image-1
+
+    @include media(">=desktop")
+    {
+        width: $page-w-desktop;
+    }
+
+    @include media("<tablet")
+    {
+        flex-flow:       column;
+        align-items:     center;
+        justify-content: center;
+    }
+
+} // workinfo__center
+
+.workinfo__right
+{
+    flex: 1 1 auto;
+
+} // workinfo__right
+
+.workinfo__center-left
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    flex: 0 1 42.8125%;
+
+    @include media("<tablet")
+    {
+        width: 60%;
+    }
+
+    @include media("<=mobile-big")
+    {
+        width: 100%;
+    }
+
+} // .workinfo__center-left
+
+.workinfo__center-right
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    flex:    1 1 57.1875%;
+    padding: 60px 0 20px;
+
+    @include media("<desktop")
+    {
+        padding-top: 10px;
+    }
+
+    @include media("<tablet")
+    {
+        padding-bottom: 10px;
+    }
+
+} // .workinfo__center-right
+
+.workinfo__label
+{
+    @include pos-abs( 47%, 54%, 0, 0, 1 );
+
+    font-family:     'Poppins';
+    font-weight:     800;
+    font-size:       58px;
+    line-height:     120%;
+    color:           #303030;
+    display:         flex;
+    flex-flow:       row;
+    align-items:     flex-start;
+    justify-content: flex-end;
+    letter-spacing:  2px;
+    overflow:        hidden;
+
+    @include media("<desktop")
+    {
+        font-size: calc(10px + (58 - 10) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    @include media("<tablet")
+    {
+        right:     20px;
+        font-size: calc(20px + (58 - 20) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+} // .workinfo__label
+
+.workinfo__title
+{
+    font-family:    'Poppins';
+    font-weight:    800;
+    font-size:      18px;
+    text-transform: uppercase;
+    color:          #303030;
+    line-height:    120%;
+    display:        block;
+    padding:        65px 12px 9px;
+
+    @include media("<desktop")
+    {
+        padding-top: 10px;
+    }
+
+} // .workinfo__title
+
+.workinfo__desc
+{
+    font-family:    'Poppins';
+    font-weight:    900;
+    font-size:      86px;
+    line-height:    90px;
+    color:          #303030;
+    padding:        0 80px 20px 7px;
+    text-transform: uppercase;
+
+    span
+    {
+        color: #e98457;
+
+    } // span
+
+    @include media("<desktop")
+    {
+        font-size:   calc(10px + (86 - 10) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 120%;
+    }
+
+    @include media("<tablet")
+    {
+        font-size:      calc(20px + (86 - 20) * ((100vw - 320px) / (1920 - 320)));
+        padding-bottom: 10px;
+    }
+
+} // .workinfo__desc
+
+.workinfo__center-right-main
+{
+    @include pos-abs( 0, 60px, 0, 0, 1 );
+
+    overflow: hidden;
+
+    @include media("<tablet")
+    {
+        position: relative;
+        overflow: visible;
+        top:      0;
+    }
+
+} // .workinfo__center-right-main
+
+.workinfo__deco-1
+{
+    @include pos-abs( 28.142%, null, null, 9.589%, 0 );
+    @include size( 30px, 30px );
+
+    stroke:       #e98457;
+    stroke-width: 26px;
+
+    svg
+    {
+        @include size( 100%, 100% );
+
+    } // svg
+
+    @include media("<tablet")
+    {
+        left:   20px;
+        bottom: -10px;
+    }
+
+} // .workinfo__deco-1
+
+.workinfo__deco-2
+{
+    @include pos-abs( 65.4%, 10.087%, null, null, 0 );
+    @include size( 48px, 48px );
+
+    fill: #e98457;
+
+    svg
+    {
+        @include size( 100%, 100% );
+
+    } // svg
+
+    @include media("<tablet")
+    {
+        left:  unset;
+        right: 20px;
+        top:   5px;
+    }
+
+} // .workinfo__deco-2
+
+.workinfo__deco-3
+{
+    @include pos-abs( 25.14%, -27px, null, null, 0 );
+    @include size( 117px, 117px );
+
+    fill: #eaeaea;
+
+    svg
+    {
+        @include size( 100%, 100% );
+
+    } // svg
+
+    @include media("<tablet")
+    {
+        left: 50%;
+        top:  20px;
+    }
+
+} // .workinfo__deco-3
+
+.workinfo__deco-4
+{
+    @include pos-abs( 5.19%, 36.36%, 0, 0, 0 );
+
+    overflow: hidden;
+
+} // workinfo__deco-4

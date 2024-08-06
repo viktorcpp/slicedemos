@@ -1,0 +1,131 @@
+.mobiles
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    max-width:  $page-container-width;
+    min-height: 695px;
+    margin:     auto;
+
+} // .mobiles
+
+.mobiles__inner
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+    display:         flex;
+    flex-flow:       column;
+    align-items:     flex-start;
+    align-content:   flex-start;
+    justify-content: center;
+    padding:         15px 0;
+
+} // .mobiles__inner
+
+.mobiles__image
+{
+    @include pos-abs( 77px, null, null, 0, 0 );
+    @include size( 34.39% );
+
+    @include media("<=tablet")
+    {
+        @include size( 50% );
+
+        left:    20px;
+        opacity: 0.3;
+    }
+
+} // .mobiles__image
+
+.mobiles__title
+{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size:   30px;
+    line-height: 120%;
+    color:       #555;
+    margin:      16px 0 13px 42.93%;
+
+    @include media("<=tablet")
+    {
+        margin-left: 20px;
+    }
+
+} // .mobiles__title
+
+.mobiles__text
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   16px;
+    line-height: 28px;
+    color:       #8c8c8c;
+    padding:     10px 10px 0 0;
+    margin:      0 0 0 42.93%;
+    box-sizing:  border-box;
+
+    p
+    {
+        display: block;
+        margin:  0 0 15px;
+
+    } // p
+
+    ul
+    {
+        line-height: 0;
+        padding:     14px 20px 0 50px;
+        margin:      0 0 15px;
+
+    } // ul
+
+    li
+    {
+        @include pos-rel( null, null, null, null, 0 );
+
+        line-height: 120%;
+        padding:     8px 0 7px 50px;
+
+    } // li
+
+    @include media("<=tablet")
+    {
+        margin-left: 20px;
+
+        ul
+        {
+            padding-left: 20px;
+
+        } // ul
+
+        li
+        {
+            padding-left: 30px;
+        }
+
+    }
+
+} // .mobiles__text
+
+.mobiles__list-mark
+{
+    @include size( 21px, 21px );
+    @include pos-abs( 0, 7px, null, null, 0 );
+
+    background:      none #c7b299;
+    border-radius:   50%;
+    display:         inline-flex;
+    align-items:     center;
+    justify-content: center;
+    fill:            #fff;
+    stroke-width:    2px;
+    stroke:          #fff;
+
+    svg
+    {
+        @include size( 50%, 50% );
+
+        margin-left: 2px;
+
+    } // svg
+
+} // .mobiles__list-mark

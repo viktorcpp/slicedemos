@@ -1,0 +1,54 @@
+.socials
+{
+    flex:            1 1 auto;
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    justify-content: stretch;
+
+} // .socials
+
+.socials__main
+{
+    flex:            1 1 auto;
+    display:         flex;
+    flex-flow:       row;
+    align-items:     center;
+    justify-content: flex-end;
+
+    li
+    {
+        padding: 0 9px;
+
+    } // ul
+
+    a
+    {
+        @include size( 26px, 26px );
+
+        display:         flex;
+        flex-flow:       row;
+        align-items:     center;
+        justify-content: center;
+        fill:            rgba( 0, 0, 0, 1 );
+        transition:      $ani-speed-025s fill ease-in-out;
+
+        &:hover
+        {
+            fill: rgba( 0, 0, 0, 0.7 );
+        }
+
+    } // a
+
+    svg
+    {
+        @include size( 18px, 18px );
+
+    } // svg
+
+    @include media("<=tablet-big")
+    {
+        justify-content: center;
+    }
+
+} // .socials__main

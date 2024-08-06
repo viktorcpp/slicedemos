@@ -1,0 +1,88 @@
+input[type=text]
+{
+    //
+
+} // input[type=text]
+
+input[type=email]
+{
+    display:     inline-block;
+    border:      none;
+    background:  none #fff;
+    font-family: 'InterUI';
+    font-weight: normal;
+    font-size:   18px;
+    color:       #455a64;
+    box-shadow:  0px 18px 35px 0px rgba(250,120,117,0.45);
+    box-sizing:  border-box;
+    padding:     0 48px;
+    height:      65px;
+
+} // input[type=email]
+
+input[type=submit]
+{
+    display:       inline-block;
+    border:        none;
+    font-family:   'Poppins';
+    font-weight:   800;
+    font-size:     18px;
+    color:         #fff;
+    line-height:   120%;
+    background:    linear-gradient( #c26470, #f97774 );
+    box-sizing:    border-box;
+    border-radius: 5px;
+    overflow:      hidden;
+    padding:       0 30px;
+    transition:    $ani-speed-02s background ease-in-out, $ani-speed-02s color ease-in-out;
+    height:        65px;
+  
+    &:hover
+    {
+        color: rgba( 226, 226, 226, 0.7 );
+    }
+
+} // input[type=submit]
+
+.form-signup
+{
+    input[type=email]
+    {
+        width:  330px;
+        margin: 0 25px 0 0;
+
+    } // input[type=email]
+
+    .form-item
+    {
+        display: inline-block;
+
+    } // .form-item
+
+    @include media("<=tablet-big")
+    {
+        input[type=email]
+        {
+            width:  280px;
+            margin: 0 15px 0 0;
+
+        } // input[type=email]
+    }
+
+} // .form-signup
+
+.form-signup__title
+{
+    font-family: 'InterUI';
+    font-weight: 500;
+    font-size:   20px;
+    color:       #455a64;
+    line-height: 120%;
+    padding:     26px 0 49px;
+
+    @include media("<=tablet-big")
+    {
+        padding: 10px 0 10px;
+    }
+
+} // .form-signup__title

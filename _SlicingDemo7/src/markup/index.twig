@@ -1,0 +1,23 @@
+{% extends "partials/base-page-template.twig" %}
+{% block content %}
+    <div class="page__main">
+        {% include 'partials/header.twig' %}
+        <section class="content">
+            <div class="content__main">
+
+                {% include 'partials/content-block-1.twig' %}
+                {% include 'partials/content-block-2.twig' %}
+                {% include 'partials/content-block-3.twig' %}
+                {% include 'partials/presentation.twig' %}
+                {% include 'partials/mobiles.twig' %}
+                {% include 'partials/stats.twig' %}
+                {% include 'partials/resent.twig' %}
+                {% include 'partials/logos.twig' %}
+                {% include 'partials/content-bottom.twig' %}
+
+            </div><!-- /content__main -->
+        </section>
+        {% include 'partials/footer.twig' %}
+    </div> <!-- /page__main -->
+    {% include 'partials/page-mobile.twig' %}
+{% endblock %}

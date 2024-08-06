@@ -1,0 +1,24 @@
+.logo
+{
+    font-family:     'JosefinSans';
+    font-weight:     900;
+    font-size:       70px;
+    color:           #000000;
+    text-decoration: none;
+    text-transform:  uppercase;
+    line-height:     120%;
+    display:         inline-flex;
+    flex-flow:       column;
+    align-items:     center;
+    padding:         27px 0 0;
+    letter-spacing:  9px;
+
+    &:after
+    {
+        @include pseudo( 66px, 3px, block );
+
+        background: none #e1d9bd;
+        margin:     11px 0 0;
+    }
+
+} // .logo

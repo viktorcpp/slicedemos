@@ -1,0 +1,108 @@
+.stats
+{
+    background: linear-gradient(to right, #211b19, #4e3427);
+
+} // .stats
+
+.stats__inner
+{
+    max-width:       $page-container-width;
+    margin:          auto;
+    display:         flex;
+    flex-flow:       row wrap;
+    align-items:     stretch;
+    align-content:   stretch;
+    justify-content: center;
+    box-sizing:      border-box;
+    padding:         20px 20px;
+
+} // .stats__inner
+
+.stats__item
+{
+    @include size( 12.5% );
+
+    text-align:      center;
+    display:         flex;
+    flex-flow:       column;
+    align-content:   center;
+    align-items:     center;
+    justify-content: center;
+    margin:          0 22px;
+    min-width:       153px;
+    padding:         45px 0 40px;
+
+    &:after
+    {
+        @include pseudo;
+        @include size( 30px, 2px );
+
+        background-color: #fff;
+    }
+
+} // .stats__item
+
+.stats__icon
+{
+    padding: 0 0 10px;
+
+} // .stats__icon
+
+.stats__icon-placeholder
+{
+    @include size( 54px, 54px );
+
+} // .stats__icon-placeholder
+
+.stats__icon-placeholder-1
+{
+    @include sprite( $ico-stats-01 );
+
+} // .stats__icon-placeholder-1
+
+.stats__icon-placeholder-2
+{
+    @include sprite( $ico-stats-02 );
+
+} // .stats__icon-placeholder-2
+
+.stats__icon-placeholder-3
+{
+    @include sprite( $ico-stats-03 );
+
+} // .stats__icon-placeholder-3
+
+.stats__icon-placeholder-4
+{
+    @include sprite( $ico-stats-04 );
+
+} // .stats__icon-placeholder-4
+
+.stats__icon-placeholder-5
+{
+    @include sprite( $ico-stats-05 );
+
+} // .stats__icon-placeholder-5
+
+.stats__count
+{
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size:   48px;
+    color:       #fff;
+    line-height: 120%;
+    margin:      0 0 7px;
+
+} // .stats__count
+
+.stats__title
+{
+    font-family:    'Montserrat';
+    font-weight:    300;
+    font-size:      14px;
+    line-height:    120%;
+    color:          #c7b299;
+    text-transform: uppercase;
+    margin:         0 0 27px;
+
+} // .stats__title

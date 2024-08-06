@@ -1,0 +1,109 @@
+.logos
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+} // .logos
+
+.logos__back
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    display:   block;
+    max-width: 100%;
+
+} // .logos__back
+
+.logos__inner
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    align-content:   stretch;
+    justify-content: stretch;
+
+} // .logos__inner
+
+.logos__col-left
+{
+    flex: 1 1 auto;
+
+    @include media("<=desktop-small")
+    {
+        display: none;
+    }
+
+} // .logos__col-left
+
+.logos__col-main
+{
+    flex:            1 1 $page-container-width;
+    display:         flex;
+    align-content:   center;
+    align-items:     center;
+    justify-content: center;
+
+    a
+    {
+        display:    inline-block;
+        margin:     40px 3.25% 40px;
+        opacity:    0.8;
+        transition: $ani-speed-025s-base opacity;
+
+        img
+        {
+            display:   block;
+            max-width: 100%;
+            height: auto;
+
+        } // img
+
+        &:hover
+        {
+            opacity: 1;
+        }
+
+    } // a
+
+    @include media("<=desktop-small")
+    {
+        width: 100%;
+    }
+
+} // .logos__col-main
+
+.logos__col-right
+{
+    flex: 1 1 auto;
+
+    @include media("<=desktop-small")
+    {
+        display: none;
+    }
+
+} // .logos__col-right
+
+.logos__item1
+{
+    width: 17.07%;
+
+} // .logos__item1
+
+.logos__item2
+{
+    width: 17.07%;
+
+} // .logos__item2
+
+.logos__item3
+{
+    width: 17.07%;
+
+} // .logos__item3
+
+.logos__item4
+{
+    width: 17.07%;
+
+} // .logos__item4

@@ -1,0 +1,53 @@
+.searchform
+{
+    display:         flex;
+    flex-flow:       row;
+    align-items:     stretch;
+    justify-content: stretch;
+
+    form
+    {
+        @include size( 100% );
+
+        display:         flex;
+        flex-flow:       row;
+        align-items:     stretch;
+        justify-content: stretch;
+
+    } // form
+
+    input[type=submit]
+    {
+        @include pos-abs( 0, 0, 0, 0, 2 );
+        @include size( 48px, 48px );
+
+    } // input[type=submit]
+
+    input[type=text]
+    {
+        @include size( 100% );
+    }
+
+    .form-text
+    {
+        flex: 1 1 auto;
+
+    } // .form-text
+
+    .form-submit-search
+    {
+        @include size( 48px, 48px );
+
+        flex: 0 0 auto;
+
+        svg
+        {
+            @include size( 17px, 17px );
+
+            margin: -8px 0 0 -8px;
+
+        } // svg
+
+    } // .form-submit-search
+
+} // .searchform

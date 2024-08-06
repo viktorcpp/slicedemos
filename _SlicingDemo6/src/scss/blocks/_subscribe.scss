@@ -1,0 +1,33 @@
+.subscribe
+{
+    //
+
+} // subscribe
+
+.subscribe__title
+{
+    margin: 0 0 23px;
+
+} // .subscribe__title
+
+.subscribe__form
+{
+    input[type=email]
+    {
+        @include size( 100% );
+
+    } // input[type=email]
+
+    input[type=submit]
+    {
+        @include size( 100% );
+
+    } // input[type=submit]
+
+    .form-item
+    {
+        margin: 0 0 16px;
+
+    } // .form-item
+
+} // .subscribe__form

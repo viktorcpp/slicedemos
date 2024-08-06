@@ -1,0 +1,236 @@
+.tabs
+{
+    padding:    20px 0 0;
+    margin:     0 auto;
+    box-sizing: border-box;
+
+    @include media(">=desktop-middle")
+    {
+        @include size( $page-container-width );
+    }
+
+} // .tabs
+
+.tabs__btns
+{
+    @include size( 100% );
+
+    display:         flex;
+    flex-flow:       row;
+    align-content:   center;
+    align-items:     center;
+    justify-content: center;
+    font-family:     'Montserrat';
+    font-weight:     300;
+    font-size:       14px;
+    line-height:     0;
+    color:           #8c8c8c;
+    margin:          0 0 20px;
+
+    li
+    {
+        line-height: 120%;
+        margin:      0 5px;
+
+    } // li
+
+    a
+    {
+        display:         block;
+        border:          1px solid #ebebeb;
+        border-radius:   3px;
+        background:      none #fff;
+        color:           inherit;
+        text-decoration: none;
+        padding:         6px 16px 7px;
+        transition:      $ani-speed-025s-base background ease-in-out, $ani-speed-025s-base border ease-in-out, $ani-speed-025s-base color ease-in-out;
+
+        &:hover, &.active
+        {
+            background:   none #998675;
+            border-color: #998675;
+            color:        #fff;
+        }
+
+    } // a
+
+} // .tabs__btns
+
+.tabs__pages
+{
+    padding: 20px 0 40px 15px;
+
+} // .tabs__pages
+
+.tabs__page
+{
+    display:         flex;
+    flex-flow:       row wrap;
+    align-items:     flex-start;
+    align-content:   flex-start;
+    justify-content: flex-start;
+
+    @include media("<=desktop-small")
+    {
+        justify-content: center;
+    }
+
+} // .tabs__page
+
+.tabs__item
+{
+    @include size( 33.333% );
+
+    max-width:        370px;
+    flex:             0 1 auto;
+    box-sizing:       border-box;
+    margin:           0 15px 30px;
+    background-color: #fbfaf8;
+    fill:             #fbfaf8;
+    transition:       $ani-speed-025s-base background ease-in-out, $ani-speed-025s-base fill ease-in-out;
+
+    &:hover, &.active
+    {
+        background-color: #362f2d;
+        fill:             #362f2d;
+
+        .tabs__links
+        {
+            opacity: 1;
+
+        } // .tabs__links
+
+        .tabs__title
+        {
+            color: #fff;
+
+        } // .tabs__title
+
+        .tabs__text
+        {
+            color: #c7b299;
+
+        } // .tabs__text
+    }
+
+    @include media("<=tablet-big")
+    {
+        @include size( auto );
+    }
+
+} // .tabs__item
+
+.tabs__image
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    & > img
+    {
+        @include pos-rel( null, null, null, null, 0 );
+
+        display:   block;
+        max-width: 100%;
+
+    } // img
+
+} // .tabs__image
+
+.tabs__links
+{
+    @include pos-abs( 0, 0, 0, 0, 1 );
+
+    display:          flex;
+    flex-flow:        row wrap;
+    align-content:    center;
+    align-items:      center;
+    justify-content:  center;
+    box-sizing:       border-box;
+    padding:          20px;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    opacity:          0;
+    transition:       $ani-speed-025s-base opacity ease-in-out;
+
+    a
+    {
+        fill:       #fff;
+        transition: $ani-speed-025s-base fill ease-in-out;
+
+        &:hover
+        {
+            fill: #c7b299;
+        }
+
+    } // a
+
+    svg
+    {
+        @include size( 26px, 26px );
+
+        margin: 0 14px;
+
+    } // svg
+
+} // .tabs__links
+
+.tabs__content
+{
+    @include pos-rel( null, null, null, null, 0 );
+
+    min-height:       100px;
+    box-sizing:       border-box;
+    padding:          17px 28px 0;
+
+} // .tabs__content
+
+.tabs__title
+{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size:   20px;
+    line-height: 120%;
+    color:       #c7b299;
+    padding:     10px 0 0;
+    margin:      0 0 5px;
+    transition:  $ani-speed-025s-base color ease-in-out;
+
+    a
+    {
+        text-decoration: none;
+        color:           inherit;
+
+    } // a
+
+} // .tabs__title
+
+.tabs__text
+{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size:   14px;
+    line-height: 120%;
+    color:       #d1d1d1;
+    transition:  $ani-speed-025s-base color ease-in-out;
+
+    a
+    {
+        text-decoration: none;
+        color:           inherit;
+
+    } // a
+
+} // .tabs__text
+
+.tabs__mark
+{
+    @include pos-abs( 20px, null, null, 100%, 1 );
+    @include size( 30px, 10px );
+
+} // .tabs__mark
+
+.tabs__more
+{
+    text-align: center;
+    flex:       1 1 100%;
+    padding:    10px 20px 40px;
+
+} // .tabs__more
