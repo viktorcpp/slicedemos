@@ -1,0 +1,6 @@
+
+@import "../settings";
+
+.buylid__button {
+  @include pos-abs(0, null, 0, 0);
+}

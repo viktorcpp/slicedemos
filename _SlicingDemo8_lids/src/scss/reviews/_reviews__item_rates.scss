@@ -1,0 +1,14 @@
+
+@import "../settings";
+
+.reviews__item_rates {
+  font:  700 36px/120% "Montserrat";
+  color: $color-gray-4;
+
+  position: relative;
+  margin:   0 0 23px;
+
+  display:        flex;
+  flex-direction: row;
+  align-items:    center;
+}

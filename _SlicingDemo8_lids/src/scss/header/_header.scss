@@ -1,0 +1,11 @@
+
+@import "../settings";
+@import "header__main";
+@import "header__phones";
+@import "header__logo";
+@import "header__top";
+
+header
+{
+    color: $color-white;
+}

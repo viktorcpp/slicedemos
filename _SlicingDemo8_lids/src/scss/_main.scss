@@ -1,0 +1,157 @@
+
+@import "settings";
+
+html, body
+{
+  margin:  0;
+  padding: 0;
+
+  font: 400 24px/120% "Inter";
+  letter-spacing: 0;
+
+  background: none $color-white;
+}
+
+body
+{
+  //margin-left: calc(100vw - 100%);
+  min-height:  100vh;
+  max-width:   100%;
+  overflow-x:  hidden;
+  overflow-y:  auto;
+  height:      100%;
+
+  display:        flex;
+  flex-direction: column;
+  align-items:    stretch;
+  justify-items:  stretch;
+}
+
+main
+{
+  width:     100vw;
+  flex-grow: 1;
+}
+
+a {
+  outline: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+// BLACK BACK link styles
+.link_black_back {
+  color: $color-white;
+
+  &:hover {
+    color: $color-gray-1;
+  }
+  &:active, &:focus {
+    color: $color-orange-1;
+  }
+  &:disabled, &.disabled {
+    color: $color-gray-2;
+  }
+}
+
+// WHITE BACK VARIANTS link styles
+@mixin link-white-back( $color:nil, $colora:nil ){
+  color:                 $color;
+  text-decoration-color: $color;
+  text-underline-offset: 4px;
+
+  transition: $ani-speed-025s text-decoration-color ease-in-out;
+
+  &:hover {
+    text-decoration-color: $colora;
+  }
+}
+
+.link_white_back_var1 {
+  @include link-white-back( $color-gray-3, $color-gray-3-a );
+}
+
+.link_white_back_var2 {
+  @include link-white-back( $color-gray-4, $color-gray-4-a );
+}
+
+.link_white_back_var3 {
+  @include link-white-back( $color-orange-1, $color-orange-1-a );
+}
+
+.link_white_back_var4 {
+  @include link-white-back( $color-gray-2, $color-gray-2-a );
+}
+
+// LINK WHITE BACK styles
+.link_white_back {
+  font:            400 32px/120% "Inter";
+  letter-spacing:  0;
+  text-decoration: none;
+  color:           $color-gray-4;
+
+  &:hover {
+    color: $color-gray-6;
+  }
+  &:active, &:focus {
+    color: $color-orange-1;
+  }
+  &:disabled, &.disabled {
+    color: $color-gray-1;
+  }
+}
+
+// BUTTONS styles
+.button {
+  border:        none;
+  background:    none transparent;
+  padding:       20px;
+  margin:        0;
+  border-radius: 20px;
+  display:       inline-block;
+
+  font:            400 24px/120% Montserrat;
+  font-size:       min( 1.25vw, 24px );
+  letter-spacing:  0;
+  text-transform:  uppercase;
+  text-decoration: none;
+  color:           $color-white;
+  background: none $color-orange-1;
+
+  &:hover {
+    background: $color-orange-2;//1
+  }
+
+  &:active, &:focus {
+    background: $color-orange-3;
+  }
+
+  &:disabled, &.disabled {
+    background: $color-gray-1;
+  }
+
+  @media (max-width: $page-w-tablet-big) {
+    font-size: min( 2vw, 24px );
+  }
+}
+
+// MARKERS styles
+.marker {
+  @include size(30px, 30px);
+
+  display:       inline-block;
+  border-radius: 50%;
+  background:    $color-gray-5;
+
+  &:hover {
+    background: $color-gray-1;
+  }
+  &:active, &:focus, &.active {
+    background: $color-orange-1;
+  }
+  &:disabled, &.disabled {
+    background: $color-gray-6;
+  }
+}

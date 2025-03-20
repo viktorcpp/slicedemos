@@ -1,0 +1,20 @@
+
+@import "../settings";
+
+.reviews__title_sub {
+  font:       400 32px/120% "Inter";
+  font-size:  min( 1.67vw, 32px );
+  text-align: center;
+  color:      $color-gray-6;
+
+  max-width: 791px;
+  margin:    0 0 38px;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    font-size:  min( 3vw, 48px );
+  }
+
+  @media (max-width: $page-w-tablet) {
+    font-size:  min( 4.67vw, 48px );
+  }
+}

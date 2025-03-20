@@ -1,0 +1,19 @@
+
+@import "../settings";
+
+.footer__navbar_list {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     center;
+  justify-content: center;
+
+  li:not(:last-child) {
+    &:after {
+      content: "|";
+
+      color:   inherit;
+
+      margin: 0 6px;
+    }
+  }
+}

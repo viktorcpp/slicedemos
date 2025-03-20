@@ -1,0 +1,15 @@
+
+@import "../settings";
+
+.faq__main {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: stretch;
+  justify-items:   stretch;
+  gap:             20px;
+
+  @media (max-width: $page-w-tablet-big) {
+    flex-direction: column;
+  }
+}

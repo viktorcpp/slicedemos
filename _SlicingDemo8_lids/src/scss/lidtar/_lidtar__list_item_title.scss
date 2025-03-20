@@ -1,0 +1,22 @@
+
+@import "../settings";
+
+.lidtar__list_item_title {
+  font:           400 32px/120% "Inter";
+  letter-spacing: 0;
+
+  position: relative;
+  z-index:  1;
+
+  display: inline-block;
+  margin:  0 0 23px;
+
+  &:after {
+    @include size(44px, 44px);
+    @include sprite($ico-star-2);
+    @include pos-abs( null, -1px, -73px );
+
+    content: "";
+    display: block;
+  }
+}

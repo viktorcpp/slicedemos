@@ -1,0 +1,14 @@
+
+@import "../settings";
+
+.slider__pager {
+  @include pos-abs(0, 82.484%, 0);
+  @include size(100%, 0);
+
+  overflow: visible;
+
+  display:         flex;
+  flex-direction:  row;
+  justify-content: center;
+  gap:             16px;
+}

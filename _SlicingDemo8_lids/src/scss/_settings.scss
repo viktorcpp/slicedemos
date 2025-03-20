@@ -1,0 +1,67 @@
+
+$page-w-mobile:         320px;
+$page-w-mobile-big:     480px;
+$page-w-tablet:         768px;
+$page-w-tablet-big:     1024px;
+$page-w-tablet-bigger:  1280px;
+$page-w-desktop-middle: 1440px;
+$page-w-desktop:        1920px;
+
+$breakpoints:
+(
+    'mobile':         $page-w-mobile,
+    'mobile-big':     $page-w-mobile-big,
+    'tablet':         $page-w-tablet,
+    'tablet-big':     $page-w-tablet-big,
+    'desktop-middle': $page-w-desktop-middle,
+    'desktop':        $page-w-desktop
+);
+
+
+$ani-speed-015s-base: 0.15s;
+$ani-speed-02s-base:  0.2s;
+$ani-speed-025s-base: 0.25s;
+$ani-speed-05s-base:  0.5s;
+$ani-speed-1s-base:   1s;
+
+
+$ani-apeed-mult: 1;
+
+
+$ani-speed-015s: 0.15s*$ani-apeed-mult;
+$ani-speed-02s:  0.2s*$ani-apeed-mult;
+$ani-speed-025s: 0.25s*$ani-apeed-mult;
+$ani-speed-05s:  0.5s*$ani-apeed-mult;
+$ani-speed-1s:   1s*$ani-apeed-mult;
+
+
+$color-white:      rgba(255, 255, 255, 1);
+$color-white-a:    rgba(255, 255, 255, 0);
+$color-black:      rgba(0, 0, 0, 255);
+$color-black-a:    rgba(0, 0, 0, 0);
+
+$color-gray-1:     rgba(192, 192, 192, 1);
+$color-gray-1-a:   rgba(192, 192, 192, 0);
+$color-gray-2:     rgba(192, 192, 192, 1);
+$color-gray-2-a:   rgba(192, 192, 192, 0);
+$color-gray-3:     rgba(128, 128, 128, 1);
+$color-gray-3-a:   rgba(128, 128, 128, 0);
+$color-gray-4:     rgba(45, 45, 45, 1);
+$color-gray-4-a:   rgba(45, 45, 45, 0);
+$color-gray-5:     rgba(219, 219, 219, 1);
+$color-gray-5-a:   rgba(219, 219, 219, 0);
+$color-gray-6:     rgba(128, 128, 128, 1);
+$color-gray-6-a:   rgba(128, 128, 128, 0);
+$color-gray-7:     rgba(246, 246, 246, 1);
+$color-gray-7-a:   rgba(246, 246, 246, 0);
+
+$color-orange-1:   rgba(255, 102, 0, 1);
+$color-orange-1-a: rgba(255, 102, 0, 0);
+$color-orange-2:   rgba(255, 152, 50, 1);
+$color-orange-2-a: rgba(255, 152, 50, 0);
+$color-orange-3:   rgba(205, 52, 0, 1);
+$color-orange-3-a: rgba(205, 52, 0, 0);
+
+
+$page-main-back:    rgba( 246, 246, 246, 255 );
+$header-back-color: rgba(45, 45, 45, 1);

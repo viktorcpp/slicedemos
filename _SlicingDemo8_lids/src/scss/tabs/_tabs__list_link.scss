@@ -1,0 +1,20 @@
+
+@import "../settings";
+
+.tabs__list_link {
+  display:         inherit;
+  align-items:     center;
+  justify-items:   center;
+  justify-content: center;
+  flex-grow:       1;
+
+  border-radius: 28px 28px 0 0;
+
+  font: inherit;
+
+  transition: $ani-speed-025s color ease-in-out;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,32 @@
+
+@import "../settings";
+
+.aservice__card_price {
+  font:      400 24px/120% "Inter";
+  font-size: min(1.25vw, 24px);
+
+  display:        flex;
+  flex-direction: row;
+  align-items:    center;
+
+  margin: 0 0 28px;
+
+  span {
+    font:      700 36px/120% "Montserrat";
+    font-size: min(1.875vw, 36px);
+
+    background-image: linear-gradient(90deg, #FF6600 0%, #F26659 27.4%, #F06177 37.4%, #E65D97 48.4%, #CA46D2 71.4%, #8D13F9 100%);
+    color:            transparent;
+    background-clip:  text;
+
+    margin: 0 0 0 13px;
+  }
+
+  @media (max-width: $page-w-tablet-bigger){
+    font-size: 4vw;
+
+    span {
+      font-size: 4vw;
+    }
+  }
+}

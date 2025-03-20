@@ -1,0 +1,22 @@
+{% extends "base-page-template.twig" %}
+{% block content %}
+    {% include 'header/header.twig' %}
+    <main>
+        {% include 'tabs/tabs.twig' %}
+        {% include 'lidtar/lidtar.twig' %}
+        {% include 'lidcosts/lidcosts.twig' %}
+        {% include 'aservice/aservice.twig' %}
+        {% include 'clients/clients.twig' %}
+        {% include 'reviews/reviews.twig' %}
+        {% include 'techlid/techlid.twig' %}
+        {% include 'regist/regist.twig' %}
+        {% include 'slider/slider.twig' %}
+        {% include 'presentation/presentation.twig' %}
+        {% include 'whywe/whywe.twig' %}
+        {% include 'regist/regist_swap.twig' %}
+        {% include 'faq/faq.twig' %}
+        {% include 'buylid/buylid.twig' %}
+        {% include 'contacts/contacts.twig' %}
+    </main>
+    {% include 'footer/footer.twig' %}
+{% endblock %}

@@ -1,0 +1,28 @@
+
+@import "../settings";
+
+.tabs__list {
+  display:         flex;
+  flex-grow:       1;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-items:   center;
+  justify-content: center;
+  gap:             20px;
+
+  min-height: 88px;
+
+  font:           400 20px/120% "Inter";
+  font-size:      min( 1.04167vw, 20px );
+  letter-spacing: 0;
+  text-align:     center;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    flex-wrap: wrap;
+    gap:       5px;
+
+    font-size: 20px;
+
+    background: $color-gray-7;
+  }
+}

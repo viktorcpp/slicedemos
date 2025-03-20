@@ -1,0 +1,28 @@
+
+@import "../settings";
+
+.whywe__list_top_item {
+  width: 33%;
+
+  background: $color-gray-7;
+
+  border-radius: 40px;
+  aspect-ratio:  580 / 317;
+  padding:       40px;
+  box-sizing:    border-box;
+  position:      relative;
+
+  &:after {
+    @include size(60px, 60px);
+    @include pos-abs(null, 40px, 40px);
+
+    background: url('../images/sprite.svg#ico-star-1-black');
+    content:    "";
+    display:    block;
+  }
+
+  @media (max-width: $page-w-tablet-bigger) {
+    width:        unset;
+    aspect-ratio: 580/150;
+  }
+}

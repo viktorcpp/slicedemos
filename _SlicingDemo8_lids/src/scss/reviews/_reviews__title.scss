@@ -1,0 +1,18 @@
+
+@import "../settings";
+
+.reviews__title {
+  font:       700 48px/120% "Montserrat";
+  font-size:  min( 2.5vw, 48px );
+  text-align: center;
+
+  margin: 0 0 18px;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    font-size:  min( 4vw, 48px );
+  }
+
+  @media (max-width: $page-w-tablet) {
+    font-size:  min( 5vw, 48px );
+  }
+}

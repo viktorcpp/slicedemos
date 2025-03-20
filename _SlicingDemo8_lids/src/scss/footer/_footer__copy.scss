@@ -1,0 +1,12 @@
+
+@import "../settings";
+
+.footer__copy {
+  // 32px
+  font:           400 1.67vw/120% "Inter";
+  font-size:      min( 1.67vw, 32px );
+  letter-spacing: 0;
+  text-align:     center;
+  color:          inherit;
+  margin:         0 0 19px;
+}

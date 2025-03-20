@@ -1,0 +1,11 @@
+
+@import "../settings";
+
+.slider__viewport {
+  display:        flex;
+  flex-grow:      1;
+  flex-direction: row;
+  align-items:    stretch;
+
+  overflow: hidden;
+}

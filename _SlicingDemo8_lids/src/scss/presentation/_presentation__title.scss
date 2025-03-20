@@ -1,0 +1,48 @@
+
+@import "../settings";
+
+.presentation__title {
+  font:       700 48px/100% "Montserrat";
+  font-size:  min(2.5vw, 48px);
+  text-align: center;
+  color:      inherit;
+
+  position: relative;
+  display:  inline-block;
+  margin:   0 0 41px;
+
+  span {
+    color: $color-orange-1;
+  }
+
+  &:after {
+    @include size(72px, 72px);
+    @include sprite($ico-camera-1);
+    @include pos-abs( null, null, -95px, 2px );
+
+    content: "";
+    display: block;
+  }
+
+  @media (max-width: $page-w-desktop-middle) {
+    font-size:  min(3vw, 48px);
+
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $page-w-tablet-big) {
+    &:after {
+      transform: scale(0.8);
+      bottom:    -8px;
+      right:     -85px;
+    }
+  }
+
+  @media (max-width: $page-w-tablet) {
+    &:after {
+      transform: scale(0.5);
+      bottom:    -16px;
+      right:     -70px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+
+@import "../settings";
+
+.lidcosts__card_list_item_checked {
+  background: $color-gray-4;
+
+  .lidcosts__type {
+    color:        $color-white;
+    border-color: $color-white;
+
+    svg {
+      fill: $color-white;
+    }
+  }
+
+  .lidcosts__item_title {
+    color: $color-white;
+  }
+
+  .lidcosts__card_list_info_item {
+    color: $color-white;
+  }
+}

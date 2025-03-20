@@ -1,0 +1,16 @@
+
+@import "../settings";
+
+.contacts__title {
+  font:       700 48px/100% "Montserrat";
+  font-size:  min(2.5vw, 48px);
+  text-align: center;
+
+  margin:  0 40px 26px 0;
+  padding: 82px 0 0;
+
+  @media (max-width: $page-w-desktop-middle) {
+    padding-top:   45px;
+    margin-bottom: 15px;
+  }
+}

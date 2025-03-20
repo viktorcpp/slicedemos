@@ -1,0 +1,68 @@
+
+@import "../settings";
+@import "techlid__col_left_image";
+@import "techlid__title";
+@import "techlid__text";
+
+.techlid {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: stretch;
+  justify-items:   stretch;
+
+  margin: 0 3.64583% 120px;
+
+  @media (max-width: $page-w-tablet-big) {
+    flex-direction: column;
+    align-items:    center;
+  }
+
+  @media (max-width: $page-w-tablet-bigger) {
+    margin-bottom: 30px;
+  }
+}
+
+.techlid__col_left {
+  display:         flex;
+  flex-basis:      50%;
+  justify-content: flex-end;
+  width:           50%;
+
+  position: relative;
+
+  padding-bottom: 70px;
+
+  &:before {
+    @include size(60px, 60px);
+    @include sprite($ico-star-1);
+    @include pos-abs(74px, 16px);
+
+    z-index: 1;
+    content: "";
+    display: block;
+  }
+
+  &:after {
+    @include size(60px, 60px);
+    @include sprite($ico-star-1);
+    @include pos-abs(null, null, 86px, 5px);
+
+    z-index: 1;
+    content: "";
+    display: block;
+  }
+
+  @media (max-width: $page-w-tablet-big) {
+    flex-basis: 80%;
+    width:      80%;
+  }
+}
+
+.techlid__col_right {
+  width: 50%;
+
+  @media (max-width: $page-w-tablet-big) {
+    width: 80%;
+  }
+}

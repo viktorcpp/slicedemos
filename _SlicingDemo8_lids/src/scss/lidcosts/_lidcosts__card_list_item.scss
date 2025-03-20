@@ -1,0 +1,13 @@
+
+@import "../settings";
+
+.lidcosts__card_list_item {
+  background: $color-gray-7;
+
+  box-sizing:    border-box;
+  border-radius: 28px;
+  padding:       40px;
+
+  display:    block;
+  flex-basis: 580px;
+}

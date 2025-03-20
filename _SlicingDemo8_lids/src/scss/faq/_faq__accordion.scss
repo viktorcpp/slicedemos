@@ -1,0 +1,9 @@
+
+@import "../settings";
+
+.faq__accordion {
+  display:        flex;
+  flex-direction: column;
+  align-items:    stretch;
+  gap:            20px;
+}

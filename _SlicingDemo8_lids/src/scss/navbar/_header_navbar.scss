@@ -1,0 +1,18 @@
+
+@import "header_navbar__list";
+@import "header_navbar__list_item";
+@import "header_navbar__list_link";
+
+nav {
+  display:         flex;
+  flex-grow:       1;
+  flex-flow:       row;
+  align-items:     center;
+  justify-items:   center;
+  justify-content: center;
+
+  @media (max-width:$page-w-desktop-middle) {
+    flex-basis: 100%;
+    order:      1;
+  }
+}

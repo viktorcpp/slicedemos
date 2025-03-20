@@ -1,0 +1,27 @@
+
+@import "../settings";
+
+.lidtar__list_item {
+  position: relative;
+
+  display:        flex;
+  flex-direction: row;
+  flex-basis:     min( 45.83vw, 880px );
+  align-items:    stretch;
+
+  //aspect-ratio: 880 / 349;
+
+  box-sizing:    border-box;
+  height:        349px;
+  border-radius: 25px;
+
+  background: $color-gray-7;
+
+  margin:  0 0 20px;
+  padding: 61px 0 0 40px;
+
+  @media (max-width: $page-w-desktop-middle) {
+    flex-basis: 100%;
+    margin:     0 50px;
+  }
+}

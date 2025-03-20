@@ -1,0 +1,19 @@
+
+@import "../settings";
+
+.lidcosts__subtitle {
+
+  font:       400 32px/100% "Inter";
+  font-size:  min( 1.67vw, 32px );
+  text-align: center;
+  color:      $color-gray-3;
+
+  width:  56.5625%;
+  margin: 0 0 63px;
+
+  @media (max-width: $page-w-desktop-middle) {
+    font-size: min( 2vw, 32px );
+
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,14 @@
+
+@import "../settings";
+
+.reviews__video_list {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: center;
+  justify-items:   center;
+  gap:             20px;
+  flex-wrap:       wrap;
+
+  width: 100%;
+}

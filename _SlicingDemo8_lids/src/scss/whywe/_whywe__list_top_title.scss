@@ -1,0 +1,13 @@
+
+@import "../settings";
+
+.whywe__list_top_title {
+  font:      700 80px/120% "Montserrat";
+  font-size: min(4.167vw, 80px);
+
+  margin: 0 0 3px;
+
+  @media (max-width: $page-w-tablet-big) {
+    font-size: min(5vw, 80px);
+  }
+}

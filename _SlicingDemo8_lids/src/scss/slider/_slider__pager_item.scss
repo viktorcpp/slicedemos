@@ -1,0 +1,10 @@
+
+@import "../settings";
+
+.slider__pager_item {
+  cursor: pointer;
+
+  @media (max-width: $page-w-tablet-big) {
+    @include size(20px, 20px);
+  }
+}

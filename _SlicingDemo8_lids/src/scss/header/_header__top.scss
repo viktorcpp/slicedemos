@@ -1,0 +1,120 @@
+
+@import "../settings";
+
+.header__top {
+  display:       flex;
+  align-items:   stretch;
+  justify-items: stretch;
+
+  color:      $color-black;
+  background: $page-main-back;
+
+  border-radius: 0 0 34px 34px;
+  padding:       0 0 88px;
+  margin:        0 0 -88px;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    flex-direction: column;
+  }
+}
+
+.header__top_title {
+  font:           700 80px/120% "Montserrat";
+  font-size:      min( 4.167vw, 80px );
+  letter-spacing: 0;
+  color:          $color-gray-4;
+  margin:         107px 0 32px 7.007%;
+
+  display:        flex;
+  flex-direction: column;
+
+  span {
+    color: $color-orange-1;
+
+    margin: 0 0 -16px;
+  }
+
+  @media (max-width: $page-w-tablet-bigger) {
+    flex-direction: row;
+    gap:            8px;
+  }
+
+  @media (max-width: $page-w-desktop-middle) {
+    margin-top: 40px;
+  }
+}
+
+.header__top_text {
+  font:           400 32px/120% "Inter";
+  font-size:      min( 1.67vw, 32px );
+  letter-spacing: 0;
+  margin:         0 20.437% 39px 7.007%;
+  position:       relative;
+
+  display:        flex;
+  flex-direction: row;
+  align-items:    center;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    font-size: min( 2vw, 32px );
+    gap: 10px;
+    margin: 0 18% 39px 7.007%;
+  }
+}
+
+.header__top_text_ico {
+  @include size(72px, 72px);
+  @include sprite($ico-money-face);
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
+.header__top_btn {
+  width:  80.08%;
+  margin: 0 0 0 7.007%;
+}
+
+.header__top_left {
+  flex-basis:     52.03125vw;
+  padding-bottom: 60px;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    flex-basis: 100%;
+
+    padding-bottom: 10px;
+  }
+}
+
+.header__top_right {
+  position:  relative;
+  flex-grow: 1;
+  padding:   60px 0;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    flex-basis: 100%;
+
+    padding-top: 10px;
+  }
+}
+
+.header__top_right_image {
+  //max-width: 100%;
+  object-fit: scale-down;
+}
+
+.star {
+  @include sprite($ico-star-1);
+  @include size(60px, 60px);
+
+  position: absolute;
+}
+
+.star-1 {
+  @include pos-abs(-29px, 69.49781%);
+}
+
+.star-2 {
+  @include pos-abs(null, 168px, 9.181%);
+}

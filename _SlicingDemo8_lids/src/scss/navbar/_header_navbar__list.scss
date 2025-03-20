@@ -1,0 +1,12 @@
+
+@import "../settings";
+
+.navbar__list {
+  display:        flex;
+  flex-direction: row;
+  gap:            3.23vw;
+
+  @media (max-width:$page-w-desktop-middle) {
+    //
+  }
+}

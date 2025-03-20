@@ -1,0 +1,17 @@
+
+@import "../settings";
+
+.whywe__list_bot_item {
+  width:         20%;
+  border-radius: 40px;
+  aspect-ratio:  340 / 420;
+  padding:       40px;
+  box-sizing:    border-box;
+
+  background: $color-gray-7;
+
+  @media (max-width: $page-w-desktop-middle) {
+    aspect-ratio: 340 / 70;
+    width:        unset;
+  }
+}

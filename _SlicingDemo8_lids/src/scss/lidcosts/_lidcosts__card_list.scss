@@ -1,0 +1,13 @@
+
+@import "../settings";
+
+.lidcosts__card_list {
+  display:        flex;
+  flex-direction: row;
+  gap:            20px;
+  justify-items: center;
+  justify-content: center;
+
+  width:   100%;
+  flex-basis: 100%;
+}

@@ -1,0 +1,18 @@
+
+@import "../settings";
+@import "clients__title";
+@import "clients__title_sub";
+@import "clients__list";
+@import "clients__list_item";
+
+.clients {
+  padding: 118px 0 0;
+
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+
+  @media (max-width: $page-w-desktop-middle) {
+    padding-top: 30px;
+  }
+}

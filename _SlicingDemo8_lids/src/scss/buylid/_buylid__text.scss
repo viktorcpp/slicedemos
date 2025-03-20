@@ -1,0 +1,13 @@
+
+@import "../settings";
+
+.buylid__text {
+  font:      400 24px/120% "Inter";
+  font-size: min(1.25vw, 24px);
+
+  margin-bottom: 20px;
+
+  @media (max-width: $page-w-desktop-middle) {
+    font-size: min(1.6vw, 24px);
+  }
+}

@@ -1,0 +1,56 @@
+
+@import "../settings";
+
+.header__phones {
+  @include pos-abs(null, 0, 0);
+
+  height:      100%;
+  display:     flex;
+  align-items: center;
+  gap:         12px;
+
+  a {
+    display:     flex;
+    overflow:    hidden;
+    align-items: center;
+  }
+
+  @media (max-width:$page-w-tablet-big) {
+    position:        unset;
+    height:          unset;
+    flex-grow:       1;
+    justify-content: center;
+  }
+}
+
+.header__phones_ico {
+  img, svg {
+    @include size(40px, 40px);
+  }
+
+  @media (max-width:$page-w-desktop-middle) {
+    img, svg {
+      @include size(30px, 30px);
+    }
+  }
+}
+
+.header__phones_wa {
+  //
+}
+
+.header__phones_tg {
+  //
+}
+
+.header__phones_ph {
+  //font:            400 32px/130% Inter;
+  font:            400 1.67vw/120% Inter;
+  font-size:       min( 1.67vw, 32px );
+  letter-spacing:  0;
+  color:           $color-white;
+  text-decoration: none;
+
+  padding:     0 30px 0 0;
+  white-space: nowrap;
+}

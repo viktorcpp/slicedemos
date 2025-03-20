@@ -1,0 +1,21 @@
+
+.lidcosts__item_title {
+  font:      700 36px/42px "Montserrat";
+  font-size: min( 1.875vw, 36px );
+
+  margin:     0 0 20px;
+  box-sizing: border-box;
+  height:     84px;
+  max-height: 84px;
+
+  line-clamp:         2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow:           hidden;
+
+  span {
+    background-image: linear-gradient(90deg, #FF6600 0%, #F26659 27.4%, #F06177 37.4%, #E65D97 48.4%, #CA46D2 71.4%, #8D13F9 100%);
+    color:            transparent;
+    background-clip:  text;
+  }
+}

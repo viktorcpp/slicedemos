@@ -1,0 +1,16 @@
+
+@import "../settings";
+
+.lidcosts__card_list_info_item {
+  font:      400 24px/120% "Inter";
+  font-size: min( 1.25vw, 24px );
+  color:     $color-gray-4;
+
+  margin:   0 0 15px 38px;
+  position: relative;
+
+  svg {
+    @include size(24px, 16px);
+    @include pos-abs(-42px, 4px);
+  }
+}

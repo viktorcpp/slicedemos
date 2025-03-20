@@ -1,0 +1,42 @@
+
+@import "../settings";
+
+.contacts__item {
+  font:      400 32px/120% "Inter";
+  font-size: min(1.67vw, 32px);
+
+  margin: 0 0 30px;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    margin-bottom: 16px;
+  }
+}
+
+.contacts__item_title {
+  color: $color-gray-3;
+}
+
+.contacts__item_text {
+  //
+}
+
+.contacts__item_title_ico {
+  padding: 0 26% 0 0;
+
+  display:        flex;
+  flex-direction: row;
+  align-items:    center;
+
+  svg {
+    @include size(64px, 64px);
+
+    flex-shrink: 0;
+    margin:      6px 0 0;
+  }
+
+  @media (max-width: $page-w-desktop-middle) {
+    svg {
+      @include size(44px, 44px);
+    }
+  }
+}

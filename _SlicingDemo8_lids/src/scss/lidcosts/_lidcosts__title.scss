@@ -1,0 +1,22 @@
+
+@import "../settings";
+
+.lidcosts__title {
+
+  font:       700 48px/100% "Montserrat";
+  font-size:  min( 2.5vw, 48px );
+  text-align: center;
+  color:      $color-gray-4;
+
+  margin: 0 0 24px;
+
+  span {
+    color: $color-orange-1;
+
+    display: block;
+  }
+
+  @media (max-width: $page-w-desktop-middle) {
+    font-size:  min( 3.5vw, 48px );
+  }
+}

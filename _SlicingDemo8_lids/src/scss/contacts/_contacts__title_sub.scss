@@ -1,0 +1,16 @@
+
+@import "../settings";
+
+.contacts__title_sub {
+  font:       400 32px/120% "Inter";
+  font-size:  min(1.67vw, 32px);
+  text-align: center;
+  color:      $color-gray-3;
+
+  margin: 0 0 65px;
+
+  @media (max-width: $page-w-desktop-middle) {
+    margin-left:   -10px;
+    margin-bottom: 35px;
+  }
+}

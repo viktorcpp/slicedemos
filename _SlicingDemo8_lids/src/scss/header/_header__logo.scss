@@ -1,0 +1,18 @@
+
+@import "../settings";
+
+.header__logo {
+  @include pos-abs(3.65vw, 0);
+
+  height:      100%;
+  display:     flex;
+  align-items: center;
+
+  @media (max-width:$page-w-tablet-big) {
+    position:  unset;
+    height:    unset;
+    flex-grow: 1;
+    flex-basis: 50%;
+    justify-content: center;
+  }
+}

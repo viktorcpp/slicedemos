@@ -1,0 +1,111 @@
+
+@import "../settings";
+
+.slider__content {
+  display:         flex;
+  flex-grow:       1;
+  flex-direction:  column;
+  align-items:     stretch;
+  justify-content: stretch;
+
+  color:      $color-gray-4;
+  padding:    4.57962% 0 0;
+  box-sizing: border-box;
+}
+
+.slider__content_main {
+  display:         flex;
+  flex-grow:       1;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: stretch;
+}
+
+.slider__content_left {
+  flex-basis: 50%;
+}
+
+.slider__content_right {
+  flex-grow:  1;
+  flex-basis: 50%;
+}
+
+.slider__content_title {
+  font:       700 48px/120% "Montserrat";
+  font-size:  min( 2.5vw, 48px );
+  text-align: center;
+
+  @media (max-width: $page-w-tablet) {
+    font-size:  min( 3.5vw, 48px );
+  }
+
+  @media (max-width: $page-w-tablet-bigger) {
+    font-size:  min( 3.5vw, 48px );
+  }
+}
+
+.slider__content_list {
+  list-style-type: decimal;
+
+  font:      400 24px/120% "Inter";
+  font-size: min(1.25vw, 24px);
+
+  padding: 42px 0 0;
+  
+  @media (max-width: $page-w-tablet-big) {
+    font-size: min(1.8vw, 24px);
+  }
+
+  @media (max-width: $page-w-tablet) {
+    font-size: min(2.2vw, 24px);
+  }
+}
+
+.slider__content_list_item {
+  margin: 0 12.02247% 19px 40px;
+}
+
+.slider__content_sub {
+  font:      700 80px/ 120% "Montserrat";
+  font-size: min(4.167vw, 80px);
+
+  padding:  9px 17.1910% 0;
+  position: relative;
+  display:  inline-block;
+  margin:   0 0 23px;
+
+  display:        flex;
+  flex-direction: row;
+  align-items:    center;
+
+  &:after {
+    @include size(72px, 72px);
+    @include sprite($ico-man-tech-1);
+
+    content: "";
+    display: block;
+  }
+
+  @media (max-width: $page-w-tablet-big) {
+    &:after {
+      transform: scale(0.7);
+    }
+  }
+
+  @media (max-width: $page-w-tablet) {
+    &:after {
+      transform: scale(0.5);
+    }
+  }
+}
+
+.slider__content_text {
+  font:      700 48px/100% "Montserrat";
+  font-size: min( 2.5vw, 48px );
+
+  padding: 0 17.1910%;
+
+  @media (max-width: $page-w-tablet) {
+    font-size: min( 3.5vw, 48px );
+  }
+}

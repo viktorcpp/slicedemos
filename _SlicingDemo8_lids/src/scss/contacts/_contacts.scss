@@ -1,0 +1,43 @@
+
+@import "../settings";
+@import "contacts__title";
+@import "contacts__title_sub";
+@import "contacts__item";
+
+.contacts {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: stretch;
+  justify-items:   stretch;
+
+  margin:        0 70px 120px;
+  border-radius: 60px;
+
+  background: $color-gray-7;
+
+  color: $color-gray-4;
+
+  @media (max-width: $page-w-desktop-middle) {
+    margin-bottom: 60px;
+  }
+}
+
+.contacts__left {
+  width:      50%;
+  padding:    0 40px 0 80px;
+  box-sizing: border-box;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    padding: 0 20px 0 40px;
+  }
+}
+
+.contacts__right {
+  width: 50%;
+
+  img {
+    max-width:     100%;
+    border-radius: 40px;
+  }
+}

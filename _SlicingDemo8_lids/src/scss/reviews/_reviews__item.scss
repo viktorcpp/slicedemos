@@ -1,0 +1,24 @@
+
+@import "../settings";
+
+.reviews__item {
+  background: $color-gray-7;
+
+  padding:       40px;
+  box-sizing:    border-box;
+  border-radius: 30px;
+
+  flex-basis: 430px;
+  //flex-basis: 1fr;
+
+  font:      400 24px/120% "Inter";
+  font-size: min(1.25vw, 24px);
+
+  @media (max-width: $page-w-tablet-bigger) {
+    font-size: min(2.5vw, 24px);
+  }
+
+  @media (max-width: $page-w-tablet) {
+    font-size: min(3.5vw, 24px);
+  }
+}

@@ -1,0 +1,36 @@
+
+@import "../settings";
+
+.faq__accordion_btn {
+  position:   relative;
+  padding:    40px;
+  box-sizing: border-box;
+
+  display:         flex;
+  flex-grow:       1;
+  flex-direction:  row;
+  align-items:     center;
+  justify-items:   self-end;
+  justify-content: space-between;
+
+  font:            400 24px/120% "Inter";
+  font-size:       min(1.25vw, 24px);
+  color:           inherit;
+  text-decoration: none;
+
+  svg {
+    @include size(46px, 46px);
+
+    stroke:       $color-gray-4;
+    stroke-width: 3px;
+    flex-shrink:  0;
+  }
+
+  @media (max-width: $page-w-desktop-middle) {
+    font-size: min(2vw, 24px);
+  }
+
+  @media (max-width: $page-w-tablet-big) {
+    font-size: min(3vw, 24px);
+  }
+}

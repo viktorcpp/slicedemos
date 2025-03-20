@@ -1,0 +1,27 @@
+
+@import "../settings";
+@import "reviews__title";
+@import "reviews__title_sub";
+@import "reviews__list";
+@import "reviews__item";
+@import "reviews__item_rates";
+@import "reviews__item_rates_value";
+@import "reviews__item_text";
+@import "reviews__item_text_sub";
+@import "reviews__video_list";
+@import "reviews__video_item";
+@import "reviews__video";
+@import "reviews__video_text";
+
+.reviews {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+
+  padding:       118px 20px 20px;
+  margin-bottom: 99px;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    font-size:  min( 3vw, 48px );
+  }
+}

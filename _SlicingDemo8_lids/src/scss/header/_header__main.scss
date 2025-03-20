@@ -1,0 +1,23 @@
+
+@import "../settings";
+
+.header__main
+{
+  background: none $header-back-color;
+
+  border-radius: 0 0 39px 39px;
+  min-height:    82px;
+  padding:       0 0 6px;
+  box-sizing:    border-box;
+  position:      relative;
+
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-items:   stretch;
+  justify-content: stretch;
+
+  @media (max-width:$page-w-tablet-big) {
+    flex-wrap: wrap;
+  }
+}

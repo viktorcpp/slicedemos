@@ -1,0 +1,28 @@
+
+@import "../settings";
+@import "lidcosts__title";
+@import "lidcosts__subtitle";
+@import "lidcosts__card_list";
+@import "lidcosts__card_list_item";
+@import "lidcosts__card_list_item_checked";
+@import "lidcosts__type";
+@import "lidcosts__item_title";
+@import "lidcosts__item_text";
+@import "lidcosts__card_list_info";
+@import "lidcosts__card_list_info_item";
+@import "lidcosts__card_list_info_btn";
+
+.lidcosts {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+
+  background: $color-white;
+
+  padding: 100px 0 0;
+  margin:  0 0 40px;
+
+  @media (max-width: $page-w-desktop-middle) {
+    padding-top: 30px;
+  }
+}

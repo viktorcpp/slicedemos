@@ -1,0 +1,35 @@
+
+@import "../settings";
+
+.buylid__title {
+  font:      700 48px/100% "Montserrat";
+  font-size: min(2.5vw, 48px);
+
+  padding:  0 200px 0 0;
+  position: relative;
+
+  span {
+    color: $color-orange-1;
+  }
+
+  &:after {
+    @include size(72px, 72px);
+    @include sprite($ico-rocket-1);
+
+    content: "";
+    display: block;
+    margin:  31px 0 0;
+  }
+
+  @media (max-width: $page-w-desktop-middle) {
+    font-size: min(3vw, 48px);
+  }
+
+  @media (max-width: $page-w-tablet-bigger) {
+    font-size: min(3.5vw, 48px);
+
+    &:after {
+      @include pos-abs( null, -50px, 10% );
+    }
+  }
+}

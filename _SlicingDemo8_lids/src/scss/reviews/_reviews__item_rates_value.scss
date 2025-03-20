@@ -1,0 +1,16 @@
+
+@import "../settings";
+
+.reviews__item_rates_value {
+  display:        inline-flex;
+  flex-direction: row;
+  align-items:    stretch;
+  gap:            7px;
+
+  margin: 0 0 0 26px;
+
+  li {
+    @include size(49px, 49px);
+    @include sprite($ico-star-3);
+  }
+}

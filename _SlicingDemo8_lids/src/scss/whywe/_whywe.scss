@@ -1,0 +1,21 @@
+
+@import "../settings";
+@import "whywe__title";
+@import "whywe__list_top";
+@import "whywe__list_top_item";
+@import "whywe__list_top_title";
+@import "whywe__list_top_text";
+@import "whywe__list_bot";
+@import "whywe__list_bot_item";
+@import "whywe__list_bot_ico";
+@import "whywe__list_bot_text";
+
+.whywe {
+  margin: 0 70px 120px;
+
+  color: $color-gray-4;
+
+  @media (max-width: $page-w-desktop-middle) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,20 @@
+
+@import "../settings";
+
+.lidtar__list {
+  display:         flex;
+  flex-direction:  row;
+  flex-wrap:       wrap;
+  align-items:     center;
+  align-content:   center;
+  gap:             20px;
+  justify-content: center;
+}
+
+.lidtar__list_col {
+  flex-basis: 50%;
+
+  &:last-child {
+    position: relative;
+  }
+}

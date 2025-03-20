@@ -1,0 +1,13 @@
+
+.reviews__video_text {
+  font:      400 24px/120% "Inter";
+  font-size: min( 1.25vw, 24px );
+
+  @media (max-width: $page-w-desktop-middle) {
+    font-size: min( 2.25vw, 24px );
+  }
+
+  @media (max-width: $page-w-tablet-big) {
+    font-size: min( 3.25vw, 24px );
+  }
+}

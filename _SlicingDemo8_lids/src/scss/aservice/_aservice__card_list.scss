@@ -1,0 +1,17 @@
+
+@import "../settings";
+
+.aservice__card_list {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: center;
+  justify-items:   center;
+  gap:             20px;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    flex-direction: column;
+
+    margin: 0 70px;
+  }
+}

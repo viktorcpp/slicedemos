@@ -1,0 +1,25 @@
+
+@import "fonts";
+@import "reset";
+@import "settings";
+@import "sprite";
+@import "utils";
+@import "_main.scss";
+@import "header/header";
+@import "footer/footer";
+@import "blocks/*.scss";
+@import "navbar/header_navbar";
+@import "tabs/tabs";
+@import "lidtar/lidtar";
+@import "lidcosts/lidcosts";
+@import "aservice/aservice";
+@import "clients/clients";
+@import "reviews/reviews";
+@import "techlid/techlid";
+@import "regist/regist";
+@import "slider/slider";
+@import "presentation/presentation";
+@import "whywe/whywe";
+@import "faq/faq";
+@import "buylid/buylid";
+@import "contacts/contacts";

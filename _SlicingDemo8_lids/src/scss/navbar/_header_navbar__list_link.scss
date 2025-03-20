@@ -1,0 +1,20 @@
+
+@import "../settings";
+
+.navbar__list_link {
+  //font:            400 24px/120% "Inter";
+  font:            400 1.25vw/120% "Inter";
+  font-size:       min( 1.25vw, 24px );
+  letter-spacing:  0;
+  color:           rgba(255, 255, 255, 1);
+  text-decoration: none;
+  transition:      $ani-speed-025s color ease-in-out;
+
+  &:hover {
+    color: $color-gray-1;
+  }
+
+  @media (max-width:$page-w-desktop-middle) {
+    font-size: min( 1.67vw, 24px );
+  }
+}

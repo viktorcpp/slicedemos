@@ -1,0 +1,22 @@
+
+@import "../settings";
+
+.clients__list_item {
+  background: $color-gray-7;
+
+  border-radius: 30px;
+
+  flex-basis: 430px;
+  display: grid;
+  place-items: center;
+
+  height: min( 10.4167vw, 200px );
+
+  @media (max-width: $page-w-tablet-big) {
+    height: min( 18.4167vw, 200px );
+  }
+
+  @media (max-width: $page-w-tablet) {
+    height: min( 25.4167vw, 200px );
+  }
+}

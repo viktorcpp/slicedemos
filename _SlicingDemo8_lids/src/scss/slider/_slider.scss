@@ -1,0 +1,28 @@
+
+@import "../settings";
+@import "slider__viewport";
+@import "slider__frame";
+@import "slider__pager";
+@import "slider__pager_item";
+@import "slider__content";
+
+.slider {
+  background: $color-gray-7;
+
+  margin:        0 3.64583vw 120px;
+  min-height:    628px;
+  border-radius: 40px;
+  position:      relative;
+
+  display:         flex;
+  align-items:     stretch;
+  justify-content: stretch;
+
+  @media (max-width: $page-w-tablet-big) {
+    min-height: 500px;
+  }
+
+  @media (max-width: $page-w-desktop-middle) {
+    margin-bottom: 30px;
+  }
+}

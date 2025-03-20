@@ -1,0 +1,15 @@
+
+@import "../settings";
+
+.whywe__list_bot {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: stretch;
+  justify-items:   stretch;
+  gap:             20px;
+
+  @media (max-width: $page-w-desktop-middle) {
+    flex-direction: column;
+  }
+}

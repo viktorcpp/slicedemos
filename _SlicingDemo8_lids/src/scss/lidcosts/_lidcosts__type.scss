@@ -1,0 +1,23 @@
+
+@import "../settings";
+
+.lidcosts__type {
+  font:  400 32px/57px "Inter";
+  color: $color-gray-4;
+
+  display:       inline-block;
+  height:        57px;
+  width:         auto;
+  border:        1px solid $color-gray-4;
+  padding:       0 19px;
+  border-radius: 18px;
+  position:      relative;
+  margin:        0 0 30px;
+
+  svg {
+    @include size(56px, 56px);
+    @include pos-abs( null, -1px, -75px );
+
+    fill: $color-gray-4;
+  }
+}

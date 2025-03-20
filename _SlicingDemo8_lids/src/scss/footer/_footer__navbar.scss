@@ -1,0 +1,16 @@
+
+@import "../settings";
+@import "footer__navbar_list";
+@import "footer__navbar_list_item";
+@import "footer__navbar_link";
+
+.footer__navbar {
+  display:         flex;
+  align-items:     center;
+  justify-content: center;
+
+  // 20px
+  font:      400 1.042vw/120% "Inter";
+  font-size: min( 1.042vw, 20px );
+  color:     $color-gray-6;
+}

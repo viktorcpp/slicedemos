@@ -1,0 +1,13 @@
+
+.presentation__video {
+  background: $color-gray-4;
+
+  border-radius: 40px;
+  width:         100%;
+  aspect-ratio:  1180 / 540;
+
+  display:         flex;
+  align-items:     stretch;
+  justify-content: stretch;
+  justify-items:   stretch;
+}

@@ -1,0 +1,22 @@
+
+@import "../settings";
+@import "presentation__title";
+@import "presentation__video";
+@import "presentation__play";
+@import "presentation__play_image";
+
+.presentation {
+  width:  61.4583%;
+  margin: 0 auto 120px;
+
+  color:      $color-gray-4;
+  text-align: center;
+
+  @media (max-width: $page-w-desktop-middle) {
+    width: 80%;
+  }
+
+  @media (max-width: $page-w-tablet-big) {
+    margin-bottom: 60px;
+  }
+}

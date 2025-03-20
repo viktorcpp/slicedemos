@@ -1,0 +1,16 @@
+
+@import "../settings";
+
+.clients__list {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: center;
+  justify-items:   center;
+  gap:             20px;
+  flex-wrap: wrap;
+
+  width:      100%;
+  box-sizing: border-box;
+  padding:    0 20px;
+}

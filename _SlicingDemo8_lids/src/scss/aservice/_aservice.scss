@@ -1,0 +1,17 @@
+
+@import "../settings";
+@import "aservice__title";
+@import "aservice__card_list";
+@import "aservice__card";
+@import "aservice__card_title";
+@import "aservice__card_price";
+@import "aservice__card_btn";
+
+.aservice {
+  padding:    68px 0 0;
+  background: $color-white;
+
+  @media (max-width: $page-w-desktop-middle) {
+    padding-top: 30px;
+  }
+}

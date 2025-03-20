@@ -1,0 +1,40 @@
+
+@import "../settings";
+@import "faq__main";
+@import "faq__image";
+@import "faq__title";
+@import "faq__accordion";
+@import "faq__accordion_item";
+@import "faq__accordion_btn";
+
+.faq {
+  margin: 0 70px 120px;
+
+  display:         flex;
+  flex-direction:  column;
+  align-items:     stretch;
+  justify-items:   stretch;
+  justify-content: stretch;
+
+  color: $color-gray-4;
+
+  @media (max-width: $page-w-tablet-bigger) {
+    margin-bottom: 40px;
+  }
+}
+
+.faq__left {
+  width: 50%;
+
+  @media (max-width: $page-w-tablet-big) {
+    width: 100%;
+  }
+}
+
+.faq__right {
+  width: 50%;
+
+  @media (max-width: $page-w-tablet-big) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+
+@import "../settings";
+
+.techlid__col_left_image {
+  border-radius: 40px;
+  margin-right:  60px;
+  max-width:     calc(100% - 60px);
+  max-height: fit-content;
+
+  position: relative;
+  z-index:  2;
+}
